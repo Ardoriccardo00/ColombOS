@@ -12,6 +12,8 @@ namespace ColombOS
 {
     public partial class Avvio : Form
     {
+        public static bool installato = false;
+
         public Avvio()
         {
             InitializeComponent();
@@ -29,8 +31,12 @@ namespace ColombOS
 
         private void btnInizio_Click(object sender, EventArgs e)
         {
-            Installazione installazione = new Installazione();
-            installazione.Show();
+            if (installato == false)
+            {
+                Installazione installazione = new Installazione();
+                installazione.Show();
+            }
+            else { Principale principale = new Principale(); principale.Show(); }
         }
     }
 }

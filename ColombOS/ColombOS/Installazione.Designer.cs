@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtRadice = new System.Windows.Forms.Label();
             this.progresso = new System.Windows.Forms.ProgressBar();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.Attesa = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -46,11 +50,12 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Location = new System.Drawing.Point(15, 65);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 43);
             this.button1.TabIndex = 1;
-            this.button1.Text = "Radice";
+            this.button1.Text = "Inizio";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -65,22 +70,48 @@
             // 
             // progresso
             // 
-            this.progresso.Location = new System.Drawing.Point(181, 85);
+            this.progresso.Location = new System.Drawing.Point(197, 85);
             this.progresso.Name = "progresso";
             this.progresso.Size = new System.Drawing.Size(100, 23);
             this.progresso.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(15, 142);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(124, 20);
+            this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Inserisci Nome Utente";
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(181, 142);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 43);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Invia";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // Attesa
+            // 
+            this.Attesa.Interval = 3000;
+            this.Attesa.Tick += new System.EventHandler(this.Attesa_Tick);
             // 
             // Installazione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(367, 240);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progresso);
             this.Controls.Add(this.txtRadice);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Installazione";
             this.Text = "Installazione";
+            this.Load += new System.EventHandler(this.Installazione_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,5 +123,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label txtRadice;
         private System.Windows.Forms.ProgressBar progresso;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer Attesa;
     }
 }
