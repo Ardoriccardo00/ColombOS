@@ -36,7 +36,7 @@ namespace ColombOS
                 Installazione installazione = new Installazione();
                 installazione.Show();
             }
-            else { Principale principale = new Principale(); principale.Show(); }
+            else { Principale principale = new Principale(); principale.Show(); this.Hide(); }
         }
     }
 }

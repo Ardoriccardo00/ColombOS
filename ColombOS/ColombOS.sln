@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColombOS", "ColombOS\ColombOS.csproj", "{E98A565C-88C4-4383-9C9C-7768C90313E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCP-Finder", "..\..\SCP-finder\SCP-Finder\SCP-Finder\SCP-Finder.csproj", "{77236B3F-395B-400F-BB9C-97D73C7CDBFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E98A565C-88C4-4383-9C9C-7768C90313E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E98A565C-88C4-4383-9C9C-7768C90313E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E98A565C-88C4-4383-9C9C-7768C90313E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77236B3F-395B-400F-BB9C-97D73C7CDBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77236B3F-395B-400F-BB9C-97D73C7CDBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77236B3F-395B-400F-BB9C-97D73C7CDBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77236B3F-395B-400F-BB9C-97D73C7CDBFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
