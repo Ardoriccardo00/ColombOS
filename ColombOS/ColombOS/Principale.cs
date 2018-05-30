@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,10 +37,31 @@ namespace ColombOS
 
         private void btnSpegni_Click(object sender, EventArgs e)
         {
-            Avvio a = new Avvio();
-            a.Show();
-            a.Close();
-            this.Close();
+            Application.Exit();
+        }
+
+        private void btnTutti_Click(object sender, EventArgs e)
+        {
+            panProgrammi.Visible = true;
+
+            // FolderBrowserDialog FBD = new FolderBrowserDialog();
+
+            //if (FBD.ShowDialog() == DialogResult.OK)
+            //{
+
+                listBox1.Items.Clear();
+                string[] files = Directory.GetFiles("C:/Users/Riccardo/Radice/Programmi");
+                string[] dirs = Directory.GetDirectories("C:/Users/Riccardo/Radice/Programmi");  //FBD.SelectedPath
+
+                foreach (string file in files)
+                {
+                    listBox1.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    listBox1.Items.Add(Path.GetFileName(dir));
+                }
+          //  }
         }
     }
 }
