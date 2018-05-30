@@ -39,14 +39,31 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnSpegni = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnUtente = new System.Windows.Forms.Button();
+            this.btnArchivio = new System.Windows.Forms.Button();
+            this.btnBanco = new System.Windows.Forms.Button();
+            this.btnImmagini = new System.Windows.Forms.Button();
+            this.btnMusica = new System.Windows.Forms.Button();
+            this.btnScaricati = new System.Windows.Forms.Button();
+            this.btnVideo = new System.Windows.Forms.Button();
             this.panStart.SuspendLayout();
             this.panTools.SuspendLayout();
             this.panPR.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panStart
             // 
             this.panStart.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panStart.Controls.Add(this.panel2);
             this.panStart.Controls.Add(this.panTools);
             this.panStart.Controls.Add(this.panPR);
             this.panStart.Controls.Add(this.label1);
@@ -60,8 +77,9 @@
             // panTools
             // 
             this.panTools.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panTools.Controls.Add(this.panel1);
             this.panTools.Controls.Add(this.label3);
-            this.panTools.Location = new System.Drawing.Point(677, 3);
+            this.panTools.Location = new System.Drawing.Point(559, 3);
             this.panTools.Name = "panTools";
             this.panTools.Size = new System.Drawing.Size(336, 149);
             this.panTools.TabIndex = 6;
@@ -80,7 +98,7 @@
             this.panPR.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panPR.Controls.Add(this.SCPFinder);
             this.panPR.Controls.Add(this.label2);
-            this.panPR.Location = new System.Drawing.Point(325, 3);
+            this.panPR.Location = new System.Drawing.Point(203, 3);
             this.panPR.Name = "panPR";
             this.panPR.Size = new System.Drawing.Size(336, 149);
             this.panPR.TabIndex = 4;
@@ -141,6 +159,131 @@
             this.btnSpegni.UseVisualStyleBackColor = true;
             this.btnSpegni.Click += new System.EventHandler(this.btnSpegni_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(360, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(336, 149);
+            this.panel1.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 16);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Tools";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.Controls.Add(this.btnVideo);
+            this.panel2.Controls.Add(this.btnScaricati);
+            this.panel2.Controls.Add(this.btnMusica);
+            this.panel2.Controls.Add(this.btnImmagini);
+            this.panel2.Controls.Add(this.btnBanco);
+            this.panel2.Controls.Add(this.btnArchivio);
+            this.panel2.Controls.Add(this.btnUtente);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Location = new System.Drawing.Point(911, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(336, 149);
+            this.panel2.TabIndex = 8;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Location = new System.Drawing.Point(360, 1);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(336, 149);
+            this.panel3.TabIndex = 7;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 16);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Tools";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(31, 16);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Files";
+            // 
+            // btnUtente
+            // 
+            this.btnUtente.Location = new System.Drawing.Point(3, 32);
+            this.btnUtente.Name = "btnUtente";
+            this.btnUtente.Size = new System.Drawing.Size(60, 47);
+            this.btnUtente.TabIndex = 7;
+            this.btnUtente.Text = "Utente";
+            this.btnUtente.UseVisualStyleBackColor = true;
+            // 
+            // btnArchivio
+            // 
+            this.btnArchivio.Location = new System.Drawing.Point(85, 32);
+            this.btnArchivio.Name = "btnArchivio";
+            this.btnArchivio.Size = new System.Drawing.Size(60, 47);
+            this.btnArchivio.TabIndex = 8;
+            this.btnArchivio.Text = "Archivio";
+            this.btnArchivio.UseVisualStyleBackColor = true;
+            // 
+            // btnBanco
+            // 
+            this.btnBanco.Location = new System.Drawing.Point(176, 32);
+            this.btnBanco.Name = "btnBanco";
+            this.btnBanco.Size = new System.Drawing.Size(60, 47);
+            this.btnBanco.TabIndex = 9;
+            this.btnBanco.Text = "Banco";
+            this.btnBanco.UseVisualStyleBackColor = true;
+            // 
+            // btnImmagini
+            // 
+            this.btnImmagini.Location = new System.Drawing.Point(3, 95);
+            this.btnImmagini.Name = "btnImmagini";
+            this.btnImmagini.Size = new System.Drawing.Size(60, 47);
+            this.btnImmagini.TabIndex = 10;
+            this.btnImmagini.Text = "Immagini";
+            this.btnImmagini.UseVisualStyleBackColor = true;
+            // 
+            // btnMusica
+            // 
+            this.btnMusica.Location = new System.Drawing.Point(85, 95);
+            this.btnMusica.Name = "btnMusica";
+            this.btnMusica.Size = new System.Drawing.Size(60, 47);
+            this.btnMusica.TabIndex = 11;
+            this.btnMusica.Text = "Musica";
+            this.btnMusica.UseVisualStyleBackColor = true;
+            // 
+            // btnScaricati
+            // 
+            this.btnScaricati.Location = new System.Drawing.Point(176, 95);
+            this.btnScaricati.Name = "btnScaricati";
+            this.btnScaricati.Size = new System.Drawing.Size(60, 47);
+            this.btnScaricati.TabIndex = 12;
+            this.btnScaricati.Text = "Scaricati";
+            this.btnScaricati.UseVisualStyleBackColor = true;
+            // 
+            // btnVideo
+            // 
+            this.btnVideo.Location = new System.Drawing.Point(255, 32);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(60, 47);
+            this.btnVideo.TabIndex = 13;
+            this.btnVideo.Text = "Video";
+            this.btnVideo.UseVisualStyleBackColor = true;
+            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -161,6 +304,12 @@
             this.panTools.PerformLayout();
             this.panPR.ResumeLayout(false);
             this.panPR.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -177,5 +326,18 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button SCPFinder;
         private System.Windows.Forms.Button btnSpegni;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnScaricati;
+        private System.Windows.Forms.Button btnMusica;
+        private System.Windows.Forms.Button btnImmagini;
+        private System.Windows.Forms.Button btnBanco;
+        private System.Windows.Forms.Button btnArchivio;
+        private System.Windows.Forms.Button btnUtente;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnVideo;
     }
 }

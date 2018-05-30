@@ -12,7 +12,7 @@ namespace ColombOS
 {
     public partial class Avvio : Form
     {
-        public static bool installato = false;
+        public static bool installato = true; //cambiare con false
 
         public Avvio()
         {

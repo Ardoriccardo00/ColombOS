@@ -36,6 +36,9 @@ namespace ColombOS
 
         private void btnSpegni_Click(object sender, EventArgs e)
         {
+            Avvio a = new Avvio();
+            a.Show();
+            a.Close();
             this.Close();
         }
     }
