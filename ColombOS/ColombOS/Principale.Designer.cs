@@ -55,6 +55,7 @@
             this.btnTutti = new System.Windows.Forms.Button();
             this.panProgrammi = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -317,11 +318,23 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(191, 308);
             this.listBox1.TabIndex = 0;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(320, 249);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 16);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "label7";
             // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1362, 742);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panProgrammi);
             this.Controls.Add(this.btnSpegni);
             this.Controls.Add(this.panStart);
@@ -347,6 +360,7 @@
             this.panPR.PerformLayout();
             this.panProgrammi.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -378,5 +392,6 @@
         private System.Windows.Forms.Button btnTutti;
         private System.Windows.Forms.Panel panProgrammi;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label7;
     }
 }
