@@ -69,18 +69,19 @@ namespace ColombOS
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
-            
-                Programma = Convert.ToString(listBox1.SelectedItem);
-                ProgrammaCompleto = "C:/Users/Riccardo/Radice/Programmi" + Programma;
-                label7.Text = ProgrammaCompleto;
-                Process.Start(Programma);
-            
+
+            Programma = Convert.ToString(listBox1.SelectedItem);
+            ProgrammaCompleto = "C:/Users/Riccardo/Radice/Programmi/" + Programma;
+            label7.Text = ProgrammaCompleto;
+            Process.Start(ProgrammaCompleto);
+
 
             //OpenFileDialog ofd = new OpenFileDialog();
-            //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK) {
-            //string FilePath = ofd.FileName;
-            //label7.Text = FilePath;
-            //Process.Start(FilePath);
+            //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            //{
+            //    string FilePath = ofd.FileName;
+            //    label7.Text = FilePath;
+            //    Process.Start(FilePath);
             //}
 
 
