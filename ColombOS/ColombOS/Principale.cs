@@ -16,6 +16,9 @@ namespace ColombOS
     {
         string Programma;
         string ProgrammaCompleto;
+        int RecPos1 = 295;
+        int RecPos2 = 60;
+        int RecPulsanti = 0;
 
         public Principale()
         {
@@ -52,27 +55,45 @@ namespace ColombOS
             //if (FBD.ShowDialog() == DialogResult.OK)
             //{
 
-                listBox1.Items.Clear();
-                string[] files = Directory.GetFiles("C:/Users/Riccardo/Radice/Programmi");
-                string[] dirs = Directory.GetDirectories("C:/Users/Riccardo/Radice/Programmi");  //FBD.SelectedPath
+            listBox1.Items.Clear();
+            string[] files = Directory.GetFiles("C:/Users/Riccardo/Radice/Programmi");
+            string[] dirs = Directory.GetDirectories("C:/Users/Riccardo/Radice/Programmi");  //FBD.SelectedPath
 
-                foreach (string file in files)
-                {
-                    listBox1.Items.Add(Path.GetFileName(file));
-                }
-                foreach (string dir in dirs)
-                {
-                    listBox1.Items.Add(Path.GetFileName(dir));
-                }
-          //  }
+            foreach (string file in files)
+            {
+                listBox1.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox1.Items.Add(Path.GetFileName(dir));
+            }
+            //  }
         }
+
+       
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
         {
+            if (RecPulsanti == 0) { RecPos1 = 295; RecPos2 = 60; }
+            if (RecPulsanti == 1) { RecPos1 = RecPos1 + 100; }
+            if (RecPulsanti == 2) { RecPos1 = RecPos1 + 100; }
+            if (RecPulsanti == 3) { RecPos1 = RecPos1 - 200; RecPos2 = RecPos2 + 100; }
+            if (RecPulsanti == 4) { RecPos1 = RecPos1 + 100;}
+            if (RecPulsanti == 5) { RecPos1 = RecPos1 + 100;}
+            if (RecPulsanti == 6) { RecPulsanti = 0; }
 
             Programma = Convert.ToString(listBox1.SelectedItem);
             ProgrammaCompleto = "C:/Users/Riccardo/Radice/Programmi/" + Programma;
-            label7.Text = ProgrammaCompleto;
+            Button btn = new Button();
+            btn.Name = Programma;
+            btn.Text = Programma;
+            btn.Location = new Point(RecPos1, RecPos2);
+            btn.Height = 47;
+            btn.Width = 75;
+            Controls.Add(btn);
+            label7.Text = Convert.ToString(RecPulsanti);
+            RecPulsanti = RecPulsanti + 1;
+            btn.BringToFront();
             Process.Start(ProgrammaCompleto);
 
 

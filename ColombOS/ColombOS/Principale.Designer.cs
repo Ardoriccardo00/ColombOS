@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principale));
             this.panStart = new System.Windows.Forms.Panel();
+            this.btnTutti = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnVideo = new System.Windows.Forms.Button();
             this.btnScaricati = new System.Windows.Forms.Button();
@@ -46,13 +47,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panPR = new System.Windows.Forms.Panel();
-            this.SCPFinder = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnSpegni = new System.Windows.Forms.Button();
-            this.btnTutti = new System.Windows.Forms.Button();
             this.panProgrammi = new System.Windows.Forms.Panel();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -79,6 +78,16 @@
             this.panStart.Size = new System.Drawing.Size(1273, 208);
             this.panStart.TabIndex = 0;
             this.panStart.Visible = false;
+            // 
+            // btnTutti
+            // 
+            this.btnTutti.Location = new System.Drawing.Point(6, 151);
+            this.btnTutti.Name = "btnTutti";
+            this.btnTutti.Size = new System.Drawing.Size(191, 47);
+            this.btnTutti.TabIndex = 4;
+            this.btnTutti.Text = "Tutti i programmi";
+            this.btnTutti.UseVisualStyleBackColor = true;
+            this.btnTutti.Click += new System.EventHandler(this.btnTutti_Click);
             // 
             // panel2
             // 
@@ -227,22 +236,11 @@
             // panPR
             // 
             this.panPR.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panPR.Controls.Add(this.SCPFinder);
             this.panPR.Controls.Add(this.label2);
             this.panPR.Location = new System.Drawing.Point(203, 3);
             this.panPR.Name = "panPR";
             this.panPR.Size = new System.Drawing.Size(336, 202);
             this.panPR.TabIndex = 4;
-            // 
-            // SCPFinder
-            // 
-            this.SCPFinder.Location = new System.Drawing.Point(6, 32);
-            this.SCPFinder.Name = "SCPFinder";
-            this.SCPFinder.Size = new System.Drawing.Size(60, 47);
-            this.SCPFinder.TabIndex = 6;
-            this.SCPFinder.Text = "SCP Finder";
-            this.SCPFinder.UseVisualStyleBackColor = true;
-            this.SCPFinder.Click += new System.EventHandler(this.SCPFinder_Click);
             // 
             // label2
             // 
@@ -290,16 +288,6 @@
             this.btnSpegni.UseVisualStyleBackColor = true;
             this.btnSpegni.Click += new System.EventHandler(this.btnSpegni_Click);
             // 
-            // btnTutti
-            // 
-            this.btnTutti.Location = new System.Drawing.Point(6, 151);
-            this.btnTutti.Name = "btnTutti";
-            this.btnTutti.Size = new System.Drawing.Size(191, 47);
-            this.btnTutti.TabIndex = 4;
-            this.btnTutti.Text = "Tutti i programmi";
-            this.btnTutti.UseVisualStyleBackColor = true;
-            this.btnTutti.Click += new System.EventHandler(this.btnTutti_Click);
-            // 
             // panProgrammi
             // 
             this.panProgrammi.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -324,7 +312,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(320, 249);
+            this.label7.Location = new System.Drawing.Point(319, 250);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(38, 16);
             this.label7.TabIndex = 5;
@@ -374,7 +362,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panTools;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button SCPFinder;
         private System.Windows.Forms.Button btnSpegni;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnScaricati;
