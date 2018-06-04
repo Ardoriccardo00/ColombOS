@@ -36,6 +36,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.Attesa = new System.Windows.Forms.Timer(this.components);
+            this.btnCopia = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -98,11 +99,21 @@
             this.Attesa.Interval = 3000;
             this.Attesa.Tick += new System.EventHandler(this.Attesa_Tick);
             // 
+            // btnCopia
+            // 
+            this.btnCopia.Location = new System.Drawing.Point(317, 205);
+            this.btnCopia.Name = "btnCopia";
+            this.btnCopia.Size = new System.Drawing.Size(38, 23);
+            this.btnCopia.TabIndex = 6;
+            this.btnCopia.UseVisualStyleBackColor = true;
+            this.btnCopia.Click += new System.EventHandler(this.btnCopia_Click);
+            // 
             // Installazione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 240);
+            this.Controls.Add(this.btnCopia);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progresso);
@@ -126,5 +137,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer Attesa;
+        private System.Windows.Forms.Button btnCopia;
     }
 }

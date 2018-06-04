@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace ColombOS
 {
     public partial class Installazione : Form
     {
-        string Radice;
+       public static string Radice;
         string nomeUtente;
         string percorsoNomeUtente;
         string percorsoBanco;
@@ -31,6 +32,8 @@ namespace ColombOS
         private void button1_Click(object sender, EventArgs e)
         {
             Radice = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+            //Radice = Convert.ToString((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)));
+           
 
             System.IO.Directory.CreateDirectory(@"C:\Users\Riccardo\Radice");
             txtRadice.Text = Radice;
@@ -70,9 +73,13 @@ namespace ColombOS
 
             txtRadice.Text = "Finito";
 
+            btnCopia.PerformClick();
+
             Avvio.installato = true;
 
-            Attesa.Enabled = true;
+            //Attesa.Enabled = true;
+
+            
 
         }
 
@@ -91,6 +98,23 @@ namespace ColombOS
         {
             Attesa.Enabled = false;
             this.Hide();
+        }
+
+        private void btnCopia_Click(object sender, EventArgs e)
+        {
+            string ciao;
+            string cciao;
+
+            ciao = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+            cciao = ciao + "/Radice/ciao.txt";
+
+            //MessageBox.Show(ciao);
+            //MessageBox.Show(cciao);
+
+            StreamWriter File = new StreamWriter(cciao);
+            File.Write("1");
+            File.Close();
+            
         }
     }
 }

@@ -14,8 +14,9 @@ namespace ColombOS
 {
     public partial class Principale : Form
     {
-        string Programma;
-        string ProgrammaCompleto;
+       public static string Programma;
+        public static string ProgrammaCompleto;
+        public static string recProgrammaCompleto;
         int RecPos1 = 295;
         int RecPos2 = 60;
         int RecPulsanti = 0;
@@ -90,12 +91,14 @@ namespace ColombOS
             btn.Location = new Point(RecPos1, RecPos2);
             btn.Height = 47;
             btn.Width = 75;
+            btn.Click += new EventHandler(btn_Click);
             Controls.Add(btn);
+            recProgrammaCompleto = btn.Text;
             label7.Text = Convert.ToString(RecPulsanti);
             RecPulsanti = RecPulsanti + 1;
             btn.BringToFront();
             Process.Start(ProgrammaCompleto);
-
+            label7.Text = Convert.ToString(ProgrammaCompleto);
 
             //OpenFileDialog ofd = new OpenFileDialog();
             //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -109,9 +112,27 @@ namespace ColombOS
 
         }
 
+        private void btn_Click(object sender, EventArgs e)
+        {
+            string lol;
+            lol = "C:/Users/Riccardo/Radice/Programmi/" + recProgrammaCompleto;
+            Process.Start(lol);
+        }
+
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnUtente_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(Installazione.Radice);
+            Process.Start(Installazione.Radice);
+        }
+
+        private void btnImmagini_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

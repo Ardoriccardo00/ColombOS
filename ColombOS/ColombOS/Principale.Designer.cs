@@ -141,6 +141,7 @@
             this.btnImmagini.TabIndex = 10;
             this.btnImmagini.Text = "Immagini";
             this.btnImmagini.UseVisualStyleBackColor = true;
+            this.btnImmagini.Click += new System.EventHandler(this.btnImmagini_Click);
             // 
             // btnBanco
             // 
@@ -168,6 +169,7 @@
             this.btnUtente.TabIndex = 7;
             this.btnUtente.Text = "Utente";
             this.btnUtente.UseVisualStyleBackColor = true;
+            this.btnUtente.Click += new System.EventHandler(this.btnUtente_Click);
             // 
             // panel3
             // 
