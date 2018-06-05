@@ -336,6 +336,7 @@
             this.Name = "Principale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principale";
+            this.Load += new System.EventHandler(this.Principale_Load);
             this.panStart.ResumeLayout(false);
             this.panStart.PerformLayout();
             this.panel2.ResumeLayout(false);

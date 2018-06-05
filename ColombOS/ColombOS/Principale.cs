@@ -14,9 +14,11 @@ namespace ColombOS
 {
     public partial class Principale : Form
     {
-       public static string Programma;
+        public static string Programma;
         public static string ProgrammaCompleto;
         public static string recProgrammaCompleto;
+        public static string cartellaRadice;
+        string ciao = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
         int RecPos1 = 295;
         int RecPos2 = 60;
         int RecPulsanti = 0;
@@ -49,7 +51,10 @@ namespace ColombOS
 
         private void btnTutti_Click(object sender, EventArgs e)
         {
-            panProgrammi.Visible = true;
+            if (panProgrammi.Visible == false) { panProgrammi.Visible = true;}
+            else if (panProgrammi.Visible == true) { panProgrammi.Visible = false;}
+
+           
 
             // FolderBrowserDialog FBD = new FolderBrowserDialog();
 
@@ -133,6 +138,11 @@ namespace ColombOS
         private void btnImmagini_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void Principale_Load(object sender, EventArgs e)
+        {
+            cartellaRadice = ciao + "/Radice";
         }
     }
 }
