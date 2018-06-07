@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tulpep.NotificationWindow;
 
 namespace ColombOS
 {
@@ -52,7 +53,8 @@ namespace ColombOS
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            panStart.Visible = true;
+            if (panStart.Visible == false) { panStart.Visible = true; }
+            else if (panStart.Visible == true) { panStart.Visible = false; }
         }
 
         private void btnSpegni_Click(object sender, EventArgs e)
@@ -100,7 +102,8 @@ namespace ColombOS
             if (RecPulsanti == 6) { RecPulsanti = 0; }
 
             Programma = Convert.ToString(listBox1.SelectedItem);
-            ProgrammaCompleto = "C:/Users/Riccardo/Radice/Programmi/" + Programma;
+            ProgrammaCompleto = percorsoProgrammi + "/" + Programma;
+
             Button btn = new Button();
             btn.Name = Programma;
             btn.Text = Programma;
@@ -113,25 +116,17 @@ namespace ColombOS
             label7.Text = Convert.ToString(RecPulsanti);
             RecPulsanti = RecPulsanti + 1;
             btn.BringToFront();
+
             Process.Start(ProgrammaCompleto);
             label7.Text = Convert.ToString(ProgrammaCompleto);
-
-            //OpenFileDialog ofd = new OpenFileDialog();
-            //if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            //{
-            //    string FilePath = ofd.FileName;
-            //    label7.Text = FilePath;
-            //    Process.Start(FilePath);
-            //}
-
-
 
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
             string lol;
-            lol = "C:/Users/Riccardo/Radice/Programmi/" + recProgrammaCompleto;
+            lol = percorsoProgrammi + "/" + recProgrammaCompleto;
+            label7.Text = Convert.ToString(lol);
             Process.Start(lol);
         }
 
@@ -148,47 +143,125 @@ namespace ColombOS
 
         private void btnImmagini_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoImmagini);
-            Process.Start(percorsoImmagini);
+            //MessageBox.Show(percorsoImmagini);
+            //Process.Start(percorsoImmagini);
+
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Immagini";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Immagini");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Immagini");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void btnMusica_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoMusica);
-            Process.Start(percorsoMusica);
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Musica";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Musica");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Musica");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void btnBanco_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoBanco);
-            Process.Start(percorsoBanco);
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Banco";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Banco");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Banco");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void btnVideo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoVideo);
-            Process.Start(percorsoVideo);
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Video";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Video");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Video");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void btnArchivio_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoArchivio);
-            Process.Start(percorsoArchivio);
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Archivio";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Archivio");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Archivio");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void btnScaricati_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(percorsoScaricati);
-            Process.Start(percorsoScaricati);
+            panel4.Visible = true;
+            lblNomeCartella.Text = "Scaricati";
+            listBox2.Items.Clear();
+            string[] files = Directory.GetFiles(cartellaRadice + "/Scaricati");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Scaricati");  //FBD.SelectedPath
+
+            foreach (string file in files)
+            {
+                listBox2.Items.Add(Path.GetFileName(file));
+            }
+            foreach (string dir in dirs)
+            {
+                listBox2.Items.Add(Path.GetFileName(dir));
+            }
         }
 
         private void Principale_Load(object sender, EventArgs e)
         {
+            ControlExtension.Draggable(panel4, true);
+
             cartellaRadice = ciao + "/" + "Radice";
             label7.Text = cartellaRadice;
 
              percorsoProgrammi = cartellaRadice + "/Programmi";
-             percorsoBanco = cartellaRadice + "/Banco";
+            label7.Text = percorsoProgrammi;
+            percorsoBanco = cartellaRadice + "/Banco";
             percorsoArchivio = cartellaRadice + "/Archivio";
             percorsoImmagini = cartellaRadice + "/" + "Immagini";
             percorsoMusica = cartellaRadice + "/Musica";
@@ -197,6 +270,89 @@ namespace ColombOS
             percorsoVideo = cartellaRadice + "/Video";
         }
 
+        private void btnAggiungiUltimo_Click(object sender, EventArgs e)
+        {
+            Button Icona = new Button(); // 742, 434
+            Icona.Name = Programma;
+            Icona.Text = Programma;
+            Icona.Location = new Point(742, 434);
+            Icona.Height = 47;
+            Icona.Width = 75;
+            Icona.Click += new EventHandler(btn_Click);
+            Controls.Add(Icona);
 
+            ControlExtension.Draggable(Icona, true);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tanto non funziona lol", "Avviso");
+        }
+
+        private void listBox2_DoubleClick(object sender, EventArgs e)
+        {
+            string Immagine = Convert.ToString(listBox2.SelectedItem);
+            string ImmagineCompleta = percorsoImmagini + "/" + Immagine;
+            Process.Start(ImmagineCompleta);
+        }
+
+        private void btnChiudi_Click(object sender, EventArgs e)
+        {
+            panel4.Visible = false;
+        }
+
+        private void btnCambiaSfondo_Click(object sender, EventArgs e)
+        {
+            string immaginePerSfondo;
+
+            OpenFileDialog ofd = new OpenFileDialog();
+            if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                panel8.Visible = true;
+                listBox3.Items.Clear();
+                string[] files = Directory.GetFiles(cartellaRadice + "/Immagini");
+                string[] dirs = Directory.GetDirectories(cartellaRadice + "/Immagini");  
+
+                foreach (string file in files)
+                {
+                    listBox3.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    listBox3.Items.Add(Path.GetFileName(dir));
+                }
+            }
+        }
+
+        private void listBox3_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            string immaginePerSfondo = Convert.ToString(listBox2.SelectedItem);
+            string immaginePerSfondoCompleta = percorsoImmagini + "/" + immaginePerSfondo;
+
+            //this.BackgroundImage = immaginePerSfondoCompleta;
+            //Non so come si fa :(
+
+            PopupNotifier popup = new PopupNotifier();
+            //popup.Image = Properties.Resources.basic2_087_info_512;
+            popup.TitleText = "Errore!";
+            popup.ContentText = "No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No No ";
+            popup.Popup(); 
+            this.BackgroundImage = Properties.Resources.nothin_to_see_here__insect;
+            label7.Text = "Nothing to see here, insect";
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            panel6.Visible = true;
+        }
     }
 }
+
+
+//OpenFileDialog ofd = new OpenFileDialog();
+//if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+//{
+//    string FilePath = ofd.FileName;
+//    label7.Text = FilePath;
+//    Process.Start(FilePath);
+//}
