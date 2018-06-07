@@ -23,6 +23,17 @@ namespace ColombOS
         int RecPos2 = 60;
         int RecPulsanti = 0;
 
+        string nomeUtente;
+        //string percorsoNomeUtente;
+        string percorsoProgrammi;
+        string percorsoBanco;
+        string percorsoArchivio;
+        string percorsoImmagini;
+        string percorsoMusica;
+        string pProgrammi;
+        string percorsoScaricati;
+        string percorsoVideo;
+
         public Principale()
         {
             InitializeComponent();
@@ -62,8 +73,8 @@ namespace ColombOS
             //{
 
             listBox1.Items.Clear();
-            string[] files = Directory.GetFiles("C:/Users/Riccardo/Radice/Programmi");
-            string[] dirs = Directory.GetDirectories("C:/Users/Riccardo/Radice/Programmi");  //FBD.SelectedPath
+            string[] files = Directory.GetFiles(cartellaRadice + "/Programmi");
+            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Programmi");  //FBD.SelectedPath
 
             foreach (string file in files)
             {
@@ -131,18 +142,61 @@ namespace ColombOS
 
         private void btnUtente_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(Installazione.Radice);
-            Process.Start(Installazione.Radice);
+            //MessageBox.Show(Installazione.percorsoNomeUtente);
+            //Process.Start(Installazione.percorsoNomeUtente);
         }
 
         private void btnImmagini_Click(object sender, EventArgs e)
         {
-           
+            MessageBox.Show(percorsoImmagini);
+            Process.Start(percorsoImmagini);
+        }
+
+        private void btnMusica_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(percorsoMusica);
+            Process.Start(percorsoMusica);
+        }
+
+        private void btnBanco_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(percorsoBanco);
+            Process.Start(percorsoBanco);
+        }
+
+        private void btnVideo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(percorsoVideo);
+            Process.Start(percorsoVideo);
+        }
+
+        private void btnArchivio_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(percorsoArchivio);
+            Process.Start(percorsoArchivio);
+        }
+
+        private void btnScaricati_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(percorsoScaricati);
+            Process.Start(percorsoScaricati);
         }
 
         private void Principale_Load(object sender, EventArgs e)
         {
-            cartellaRadice = ciao + "/Radice";
+            cartellaRadice = ciao + "/" + "Radice";
+            label7.Text = cartellaRadice;
+
+             percorsoProgrammi = cartellaRadice + "/Programmi";
+             percorsoBanco = cartellaRadice + "/Banco";
+            percorsoArchivio = cartellaRadice + "/Archivio";
+            percorsoImmagini = cartellaRadice + "/" + "Immagini";
+            percorsoMusica = cartellaRadice + "/Musica";
+           pProgrammi = cartellaRadice + "/Programmi";
+            percorsoScaricati = cartellaRadice + "/Scaricati";
+            percorsoVideo = cartellaRadice + "/Video";
         }
+
+
     }
 }

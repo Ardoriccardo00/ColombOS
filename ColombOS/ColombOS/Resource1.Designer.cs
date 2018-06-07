@@ -61,6 +61,16 @@ namespace ColombOS {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] _20150524_210814 {
+            get {
+                object obj = ResourceManager.GetObject("_20150524_210814", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap _2cda3e87c8d45e18cc7e3e931c26a244 {
@@ -76,6 +86,16 @@ namespace ColombOS {
         internal static string ciao {
             get {
                 return ResourceManager.GetString("ciao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap new_president_levi {
+            get {
+                object obj = ResourceManager.GetObject("new_president_levi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

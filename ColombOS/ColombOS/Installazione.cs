@@ -14,15 +14,18 @@ namespace ColombOS
     public partial class Installazione : Form
     {
        public static string Radice;
-        string nomeUtente;
-        string percorsoNomeUtente;
-        string percorsoBanco;
-        string percorsoScaricati;
-        string percorsoArchivio;
-        string percorsoMusica;
-        string percorsoImmagini;
-        string percorsoVideo;
-        
+       public static string nomeUtente;
+        public static string percorsoNomeUtente;
+        public static string percorsoBanco;
+        public static string percorsoScaricati;
+        public static string percorsoArchivio;
+        public static string percorsoMusica;
+        public static string percorsoImmagini;
+        public static string percorsoVideo;
+        public static string percorsoProgrammi;
+       public static string cartellaRadice;
+        string ciao;
+
 
         public Installazione()
         {
@@ -32,42 +35,52 @@ namespace ColombOS
         private void button1_Click(object sender, EventArgs e)
         {
             Radice = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
-            //Radice = Convert.ToString((Environment.GetFolderPath(Environment.SpecialFolder.UserProfile)));
+            percorsoNomeUtente = cartellaRadice + "/" + nomeUtente;
+            percorsoProgrammi = cartellaRadice + "/Programmi";
+            percorsoBanco = cartellaRadice + "/Banco";
+            percorsoArchivio = cartellaRadice + "/Archivio";
+            percorsoImmagini = cartellaRadice + "/Immagini";
+            percorsoMusica = cartellaRadice + "/Musica";
+            percorsoProgrammi = cartellaRadice + "/Programmi";
+            percorsoScaricati = cartellaRadice + "/Scaricati";
+            percorsoVideo = cartellaRadice + "/Video";
            
 
-            System.IO.Directory.CreateDirectory(@"C:\Users\Riccardo\Radice");
+
+            System.IO.Directory.CreateDirectory(cartellaRadice);
             txtRadice.Text = Radice;
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C:\Users\Riccardo\Radice\Programmi");
+            System.IO.Directory.CreateDirectory(percorsoProgrammi);
             txtRadice.Text = "Programmi";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C:\Users\Riccardo\Radice\" + nomeUtente);
+            System.IO.Directory.CreateDirectory(percorsoNomeUtente);
+            label2.Text = percorsoNomeUtente;
             txtRadice.Text = percorsoNomeUtente;
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Banco");
+            System.IO.Directory.CreateDirectory(percorsoBanco);
             txtRadice.Text = "Banco da lavoro";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Scaricati");
+            System.IO.Directory.CreateDirectory(percorsoScaricati);
             txtRadice.Text = "Scaricati";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Archivio");
+            System.IO.Directory.CreateDirectory(percorsoArchivio);
             txtRadice.Text = "Archivio";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Musica");
+            System.IO.Directory.CreateDirectory(percorsoMusica);
             txtRadice.Text = "Musica";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Immagini");
+            System.IO.Directory.CreateDirectory(percorsoImmagini);
             txtRadice.Text = "Immagini";
             progresso.Increment(10);
 
-            System.IO.Directory.CreateDirectory(@"C: \Users\Riccardo\Radice\" + nomeUtente + "Video");
+            System.IO.Directory.CreateDirectory(percorsoVideo);
             txtRadice.Text = "Video";
             progresso.Increment(20);
 
@@ -85,7 +98,8 @@ namespace ColombOS
 
         private void Installazione_Load(object sender, EventArgs e)
         {
-            
+            string ciao = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+            cartellaRadice = ciao + "/Radice";
         }
 
         private void button2_Click(object sender, EventArgs e)

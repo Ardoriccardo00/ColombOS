@@ -114,6 +114,7 @@
             this.btnVideo.TabIndex = 13;
             this.btnVideo.Text = "Video";
             this.btnVideo.UseVisualStyleBackColor = true;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
             // 
             // btnScaricati
             // 
@@ -123,6 +124,7 @@
             this.btnScaricati.TabIndex = 12;
             this.btnScaricati.Text = "Scaricati";
             this.btnScaricati.UseVisualStyleBackColor = true;
+            this.btnScaricati.Click += new System.EventHandler(this.btnScaricati_Click);
             // 
             // btnMusica
             // 
@@ -132,6 +134,7 @@
             this.btnMusica.TabIndex = 11;
             this.btnMusica.Text = "Musica";
             this.btnMusica.UseVisualStyleBackColor = true;
+            this.btnMusica.Click += new System.EventHandler(this.btnMusica_Click);
             // 
             // btnImmagini
             // 
@@ -151,6 +154,7 @@
             this.btnBanco.TabIndex = 9;
             this.btnBanco.Text = "Banco";
             this.btnBanco.UseVisualStyleBackColor = true;
+            this.btnBanco.Click += new System.EventHandler(this.btnBanco_Click);
             // 
             // btnArchivio
             // 
@@ -160,9 +164,11 @@
             this.btnArchivio.TabIndex = 8;
             this.btnArchivio.Text = "Archivio";
             this.btnArchivio.UseVisualStyleBackColor = true;
+            this.btnArchivio.Click += new System.EventHandler(this.btnArchivio_Click);
             // 
             // btnUtente
             // 
+            this.btnUtente.Enabled = false;
             this.btnUtente.Location = new System.Drawing.Point(3, 32);
             this.btnUtente.Name = "btnUtente";
             this.btnUtente.Size = new System.Drawing.Size(142, 47);

@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Attesa = new System.Windows.Forms.Timer(this.components);
             this.btnCopia = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,7 +83,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 20);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Inserisci Nome Utente";
+            this.textBox1.Text = "Utente";
             // 
             // button2
             // 
@@ -101,18 +102,28 @@
             // 
             // btnCopia
             // 
-            this.btnCopia.Location = new System.Drawing.Point(317, 205);
+            this.btnCopia.Location = new System.Drawing.Point(359, 205);
             this.btnCopia.Name = "btnCopia";
             this.btnCopia.Size = new System.Drawing.Size(38, 23);
             this.btnCopia.TabIndex = 6;
             this.btnCopia.UseVisualStyleBackColor = true;
             this.btnCopia.Click += new System.EventHandler(this.btnCopia_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(146, 205);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "label2";
+            // 
             // Installazione
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(367, 240);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCopia);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
@@ -138,5 +149,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Timer Attesa;
         private System.Windows.Forms.Button btnCopia;
+        private System.Windows.Forms.Label label2;
     }
 }

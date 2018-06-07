@@ -13,7 +13,9 @@ namespace ColombOS
 {
     public partial class Avvio : Form
     {
-        public static bool installato = true; //cambiare con false
+        public static bool installato = false; //cambiare con false
+        string ciao = (Environment.GetFolderPath(Environment.SpecialFolder.UserProfile));
+        string cartellaRadice;
 
         public Avvio()
         {
@@ -27,12 +29,14 @@ namespace ColombOS
 
         private void Avvio_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnInizio_Click(object sender, EventArgs e)
         {
-            
+            string cartellaRadice = ciao + "/" + "Radice";
+            if (File.Exists(cartellaRadice)) { installato = true; }
+
             if (installato == false)
             {
                 Installazione installazione = new Installazione();

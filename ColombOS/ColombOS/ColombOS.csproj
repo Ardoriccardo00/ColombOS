@@ -124,5 +124,11 @@
   <ItemGroup>
     <None Include="Resources\ciao.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new president levi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20150524_210814.mp4" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

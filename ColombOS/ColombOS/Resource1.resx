@@ -124,4 +124,10 @@
   <data name="_2cda3e87c8d45e18cc7e3e931c26a244" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\2cda3e87c8d45e18cc7e3e931c26a244.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="new_president_levi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\new president levi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_20150524_210814" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\20150524_210814.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
