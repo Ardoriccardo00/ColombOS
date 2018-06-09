@@ -60,6 +60,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnInizio);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Avvio";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Avvio_Load);

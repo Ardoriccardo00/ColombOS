@@ -131,6 +131,7 @@
             this.Controls.Add(this.txtRadice);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Installazione";
             this.Text = "Installazione";
             this.Load += new System.EventHandler(this.Installazione_Load);
