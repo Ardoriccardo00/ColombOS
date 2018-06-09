@@ -31,18 +31,21 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cartella));
             this.panelImmagini = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnChiudi = new System.Windows.Forms.Button();
             this.lblNomeCartella = new System.Windows.Forms.Label();
             this.Lista = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelImmagini.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelImmagini
             // 
             this.panelImmagini.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panelImmagini.Controls.Add(this.pictureBox1);
             this.panelImmagini.Controls.Add(this.panel5);
             this.panelImmagini.Controls.Add(this.Lista);
             this.panelImmagini.Location = new System.Drawing.Point(0, 2);
@@ -51,6 +54,15 @@
             this.panelImmagini.TabIndex = 7;
             this.panelImmagini.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelImmagini_MouseDown);
             this.panelImmagini.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelImmagini_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ColombOS.Resource1.favicon__2_1;
+            this.pictureBox1.Location = new System.Drawing.Point(276, 323);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 48);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // panel5
             // 
@@ -109,6 +121,7 @@
             this.Text = "Cartella";
             this.Load += new System.EventHandler(this.Cartella_Load);
             this.panelImmagini.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -123,5 +136,6 @@
         private System.Windows.Forms.ListBox Lista;
         public System.Windows.Forms.Label lblNomeCartella;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

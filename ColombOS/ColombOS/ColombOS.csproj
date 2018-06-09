@@ -221,5 +221,17 @@
   <ItemGroup>
     <None Include="Resources\Downloads-icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %282%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

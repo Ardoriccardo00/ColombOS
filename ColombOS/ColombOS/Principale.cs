@@ -32,6 +32,7 @@ namespace ColombOS
         string pProgrammi;
         string percorsoScaricati;
         string percorsoVideo;
+        string percorsoUtente;
 
        public static string Media;
 
@@ -99,13 +100,14 @@ namespace ColombOS
 
         private void btnUtente_Click(object sender, EventArgs e) // Click utente
         {
-            //MessageBox.Show(Installazione.percorsoNomeUtente);
-            //Process.Start(Installazione.percorsoNomeUtente);
+            Media = "Utente";
+
+            Cartella c = new Cartella();
+            c.Show();
         }
 
         private void Principale_Load(object sender, EventArgs e) // Load Principale
         {
-            ControlExtension.Draggable(pannello, true);
 
             cartellaRadice = ciao + "/" + "Radice";
             label7.Text = cartellaRadice;
@@ -119,6 +121,7 @@ namespace ColombOS
            pProgrammi = cartellaRadice + "/Programmi";
             percorsoScaricati = cartellaRadice + "/Scaricati";
             percorsoVideo = cartellaRadice + "/Video";
+            percorsoUtente = cartellaRadice + "/Utente";
         }
 
         private void btnAggiungiUltimo_Click(object sender, EventArgs e) // Pulsante Aggiungi ultimo
@@ -138,18 +141,6 @@ namespace ColombOS
         private void button1_Click(object sender, EventArgs e) // Cerca
         {
             MessageBox.Show("Tanto non funziona lol", "Avviso");
-        }
-
-        private void listBox2_DoubleClick(object sender, EventArgs e) // Click lista
-        {
-            string Immagine = Convert.ToString(listBox2.SelectedItem);
-            string ImmagineCompleta = percorsoImmagini + "/" + Immagine;
-            Process.Start(ImmagineCompleta);
-        }
-
-        private void btnChiudi_Click(object sender, EventArgs e) // Pulsante chiudi
-        {
-            pannello.Visible = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e) // Pulsante spegni

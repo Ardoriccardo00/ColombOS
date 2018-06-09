@@ -133,6 +133,20 @@ namespace ColombOS
                     Lista.Items.Add(Path.GetFileName(dir));
                 }
             }
+            else if (Media == "Utente")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Utente");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Utente");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
+            }
             else { MessageBox.Show("Non è stato possibile trovare il tipo di cartella!", "Errore!"); }
         }
 
@@ -141,11 +155,17 @@ namespace ColombOS
             Programma = Convert.ToString(Lista.SelectedItem);
             programmaCompleto = Principale.percorsoImmagini + "/" + Programma;
 
-            PhotoViewer pw = new PhotoViewer();
-            pw.Show();
+            if (Media == "Immagini")
+            {
+                PhotoViewer pw = new PhotoViewer();
+                pw.Show();
 
-            //System.Diagnostics.Process.Start(programmaCompleto);
-        }
+            }
+        
+            else
+            {System.Diagnostics.Process.Start(programmaCompleto); }
+
+            }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
