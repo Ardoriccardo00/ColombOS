@@ -118,114 +118,48 @@ namespace ColombOS
             c.Show();
 
             Cartella.Media = "Immagini";
-            MessageBox.Show(Cartella.Media);
 
-            //MessageBox.Show(percorsoImmagini);
-            //Process.Start(percorsoImmagini);
-
-            //panelImmagini.Visible = true;
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Immagini");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Immagini");  //FBD.SelectedPath
-
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
         }
 
         private void btnMusica_Click(object sender, EventArgs e)
         {
-            pannello.Visible = true;
-            lblNomeCartella.Text = "Musica";
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Musica");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Musica");  //FBD.SelectedPath
+            Cartella c = new Cartella();
+            c.Show();
 
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
+            Cartella.Media = "Musica";
+
         }
 
         private void btnBanco_Click(object sender, EventArgs e)
         {
-            pannello.Visible = true;
-            lblNomeCartella.Text = "Banco";
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Banco");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Banco");  //FBD.SelectedPath
+            Cartella c = new Cartella();
+            c.Show();
 
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
+            Cartella.Media = "Banco";
         }
 
         private void btnVideo_Click(object sender, EventArgs e)
         {
-            pannello.Visible = true;
-            lblNomeCartella.Text = "Video";
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Video");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Video");  //FBD.SelectedPath
+            Cartella c = new Cartella();
+            c.Show();
 
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
+            Cartella.Media = "Video";
         }
 
         private void btnArchivio_Click(object sender, EventArgs e)
         {
-            pannello.Visible = true;
-            lblNomeCartella.Text = "Archivio";
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Archivio");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Archivio");  //FBD.SelectedPath
+            Cartella c = new Cartella();
+            c.Show();
 
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
+            Cartella.Media = "Archivio";
         }
 
         private void btnScaricati_Click(object sender, EventArgs e)
         {
-            pannello.Visible = true;
-            lblNomeCartella.Text = "Scaricati";
-            listBox2.Items.Clear();
-            string[] files = Directory.GetFiles(cartellaRadice + "/Scaricati");
-            string[] dirs = Directory.GetDirectories(cartellaRadice + "/Scaricati");  //FBD.SelectedPath
+            Cartella c = new Cartella();
+            c.Show();
 
-            foreach (string file in files)
-            {
-                listBox2.Items.Add(Path.GetFileName(file));
-            }
-            foreach (string dir in dirs)
-            {
-                listBox2.Items.Add(Path.GetFileName(dir));
-            }
+            Cartella.Media = "Scaricati";
         }
 
         private void Principale_Load(object sender, EventArgs e) // Load Principale

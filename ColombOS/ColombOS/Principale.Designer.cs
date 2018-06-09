@@ -149,9 +149,9 @@
             // 
             // btnMusica
             // 
-            this.btnMusica.Location = new System.Drawing.Point(85, 95);
+            this.btnMusica.Location = new System.Drawing.Point(84, 95);
             this.btnMusica.Name = "btnMusica";
-            this.btnMusica.Size = new System.Drawing.Size(60, 47);
+            this.btnMusica.Size = new System.Drawing.Size(61, 47);
             this.btnMusica.TabIndex = 11;
             this.btnMusica.Text = "Musica";
             this.btnMusica.UseVisualStyleBackColor = true;
@@ -161,7 +161,7 @@
             // 
             this.btnImmagini.Location = new System.Drawing.Point(3, 95);
             this.btnImmagini.Name = "btnImmagini";
-            this.btnImmagini.Size = new System.Drawing.Size(76, 47);
+            this.btnImmagini.Size = new System.Drawing.Size(75, 47);
             this.btnImmagini.TabIndex = 10;
             this.btnImmagini.Text = "Immagini";
             this.btnImmagini.UseVisualStyleBackColor = true;

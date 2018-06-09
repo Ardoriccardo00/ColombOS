@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cartella));
             this.panelImmagini = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnChiudi = new System.Windows.Forms.Button();
             this.lblNomeCartella = new System.Windows.Forms.Label();
             this.Lista = new System.Windows.Forms.ListBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelImmagini.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +91,11 @@
             this.Lista.TabIndex = 0;
             this.Lista.DoubleClick += new System.EventHandler(this.Lista_DoubleClick);
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Cartella
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -115,5 +122,6 @@
         private System.Windows.Forms.Button btnChiudi;
         private System.Windows.Forms.ListBox Lista;
         public System.Windows.Forms.Label lblNomeCartella;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -46,20 +46,92 @@ namespace ColombOS
 
         private void Cartella_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Il nome della cartella è" + Media);
-            lblNomeCartella.Text = Media;
+            timer1.Enabled = true;
 
             Lista.Items.Clear();
-            string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Immagini");
-            string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Immagini");  //FBD.SelectedPath
+            if      (Media == "Immagini")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Immagini");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Immagini");
 
-            foreach (string file in files)
-            {
-                Lista.Items.Add(Path.GetFileName(file));
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
             }
-            foreach (string dir in dirs)
+            else if (Media == "Musica")
             {
-                Lista.Items.Add(Path.GetFileName(dir));
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Musica");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Musica");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
+            }
+            else if (Media == "Video")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Video");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Video");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
+            }
+            else if (Media == "Banco")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Banco");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Banco");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
+            }
+            else if (Media == "Scaricati")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Scaricati");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Scaricati");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
+            }
+            else if (Media == "Archivio")
+            {
+                string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Archivio");
+                string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Archivio");
+
+                foreach (string file in files)
+                {
+                    Lista.Items.Add(Path.GetFileName(file));
+                }
+                foreach (string dir in dirs)
+                {
+                    Lista.Items.Add(Path.GetFileName(dir));
+                }
             }
         }
 
@@ -72,6 +144,12 @@ namespace ColombOS
             pw.Show();
 
             //System.Diagnostics.Process.Start(programmaCompleto);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblNomeCartella.Text = Media;
+            timer1.Enabled = false;
         }
     }
 }
