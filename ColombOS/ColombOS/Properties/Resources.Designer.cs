@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ColombOS {
+namespace ColombOS.Properties {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace ColombOS {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource1 {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource1() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace ColombOS {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ColombOS.Resource1", typeof(Resource1).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("ColombOS.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,21 +61,31 @@ namespace ColombOS {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Byte[].
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static byte[] _20150524_210814 {
+        internal static System.Drawing.Bitmap _05_info_512 {
             get {
-                object obj = ResourceManager.GetObject("_20150524_210814", resourceCulture);
-                return ((byte[])(obj));
+                object obj = ResourceManager.GetObject("_05_info_512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _2cda3e87c8d45e18cc7e3e931c26a244 {
+        internal static System.Drawing.Bitmap _64 {
             get {
-                object obj = ResourceManager.GetObject("_2cda3e87c8d45e18cc7e3e931c26a244", resourceCulture);
+                object obj = ResourceManager.GetObject("64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _641 {
+            get {
+                object obj = ResourceManager.GetObject("641", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -85,7 +95,7 @@ namespace ColombOS {
         /// </summary>
         internal static System.Drawing.Bitmap Apps_Dialog_Shutdown_icon {
             get {
-                object obj = ResourceManager.GetObject("Apps_Dialog_Shutdown_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("Apps-Dialog-Shutdown-icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +103,9 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap archive_icon {
+        internal static System.Drawing.Bitmap basic2_087_info_512 {
             get {
-                object obj = ResourceManager.GetObject("archive_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("basic2_087_info_512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,58 +113,9 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap camera_icon {
-            get {
-                object obj = ResourceManager.GetObject("camera_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to 1.
-        /// </summary>
-        internal static string ciao {
-            get {
-                return ResourceManager.GetString("ciao", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Downloads_icon {
-            get {
-                object obj = ResourceManager.GetObject("Downloads_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon faviconnn {
+        internal static System.Drawing.Bitmap faviconnn {
             get {
                 object obj = ResourceManager.GetObject("faviconnn", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Guyman_Helmet_Music_icon {
-            get {
-                object obj = ResourceManager.GetObject("Guyman_Helmet_Music_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap new_president_levi {
-            get {
-                object obj = ResourceManager.GetObject("new_president_levi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -172,9 +133,9 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Settings_icon {
+        internal static System.Drawing.Bitmap rsz_shutdown_512 {
             get {
-                object obj = ResourceManager.GetObject("Settings_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("rsz_shutdown-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -182,9 +143,9 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Start_icon {
+        internal static System.Drawing.Bitmap scp_background {
             get {
-                object obj = ResourceManager.GetObject("Start_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("scp-background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -192,19 +153,9 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap System_desktop_icon {
+        internal static System.Drawing.Bitmap shutdown_512 {
             get {
-                object obj = ResourceManager.GetObject("System_desktop_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap video_camera_icon {
-            get {
-                object obj = ResourceManager.GetObject("video_camera_icon", resourceCulture);
+                object obj = ResourceManager.GetObject("shutdown-512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

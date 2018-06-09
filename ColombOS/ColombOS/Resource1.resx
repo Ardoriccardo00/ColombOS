@@ -139,7 +139,28 @@
   <data name="faviconnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\faviconnn.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="archive_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\archive-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\camera-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Downloads_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Downloads-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Guyman_Helmet_Music_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Guyman-Helmet-Music-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Settings-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Start_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\Start-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="System_desktop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\System-desktop-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="video_camera_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\video-camera-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

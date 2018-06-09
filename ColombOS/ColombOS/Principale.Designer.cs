@@ -33,18 +33,17 @@
             this.btnCerca = new System.Windows.Forms.Button();
             this.btnTutti = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnVideo = new System.Windows.Forms.Button();
-            this.btnScaricati = new System.Windows.Forms.Button();
-            this.btnMusica = new System.Windows.Forms.Button();
-            this.btnImmagini = new System.Windows.Forms.Button();
-            this.btnBanco = new System.Windows.Forms.Button();
-            this.btnArchivio = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.btnMusica = new System.Windows.Forms.PictureBox();
+            this.btnBanco = new System.Windows.Forms.PictureBox();
+            this.btnImmagini = new System.Windows.Forms.PictureBox();
+            this.btnVideo = new System.Windows.Forms.PictureBox();
             this.btnUtente = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panTools = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -63,10 +62,17 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnScaricati = new System.Windows.Forms.PictureBox();
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMusica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBanco)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImmagini)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideo)).BeginInit();
             this.panel3.SuspendLayout();
             this.panTools.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panPR.SuspendLayout();
             this.panProgrammi.SuspendLayout();
@@ -74,6 +80,7 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScaricati)).BeginInit();
             this.SuspendLayout();
             // 
             // panStart
@@ -115,12 +122,12 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel2.Controls.Add(this.btnVideo);
             this.panel2.Controls.Add(this.btnScaricati);
+            this.panel2.Controls.Add(this.pictureBox4);
             this.panel2.Controls.Add(this.btnMusica);
-            this.panel2.Controls.Add(this.btnImmagini);
             this.panel2.Controls.Add(this.btnBanco);
-            this.panel2.Controls.Add(this.btnArchivio);
+            this.panel2.Controls.Add(this.btnImmagini);
+            this.panel2.Controls.Add(this.btnVideo);
             this.panel2.Controls.Add(this.btnUtente);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.label6);
@@ -129,65 +136,60 @@
             this.panel2.Size = new System.Drawing.Size(336, 202);
             this.panel2.TabIndex = 8;
             // 
-            // btnVideo
+            // pictureBox4
             // 
-            this.btnVideo.Location = new System.Drawing.Point(231, 32);
-            this.btnVideo.Name = "btnVideo";
-            this.btnVideo.Size = new System.Drawing.Size(60, 47);
-            this.btnVideo.TabIndex = 13;
-            this.btnVideo.Text = "Video";
-            this.btnVideo.UseVisualStyleBackColor = true;
-            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click);
-            // 
-            // btnScaricati
-            // 
-            this.btnScaricati.Location = new System.Drawing.Point(231, 148);
-            this.btnScaricati.Name = "btnScaricati";
-            this.btnScaricati.Size = new System.Drawing.Size(60, 47);
-            this.btnScaricati.TabIndex = 12;
-            this.btnScaricati.Text = "Scaricati";
-            this.btnScaricati.UseVisualStyleBackColor = true;
-            this.btnScaricati.Click += new System.EventHandler(this.btnScaricati_Click);
+            this.pictureBox4.Image = global::ColombOS.Resource1.archive_icon;
+            this.pictureBox4.Location = new System.Drawing.Point(227, 111);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox4.TabIndex = 13;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
             // btnMusica
             // 
-            this.btnMusica.Location = new System.Drawing.Point(84, 95);
+            this.btnMusica.Image = global::ColombOS.Resource1.Guyman_Helmet_Music_icon;
+            this.btnMusica.Location = new System.Drawing.Point(81, 111);
             this.btnMusica.Name = "btnMusica";
-            this.btnMusica.Size = new System.Drawing.Size(61, 47);
-            this.btnMusica.TabIndex = 11;
-            this.btnMusica.Text = "Musica";
-            this.btnMusica.UseVisualStyleBackColor = true;
-            this.btnMusica.Click += new System.EventHandler(this.btnMusica_Click);
-            // 
-            // btnImmagini
-            // 
-            this.btnImmagini.Location = new System.Drawing.Point(3, 95);
-            this.btnImmagini.Name = "btnImmagini";
-            this.btnImmagini.Size = new System.Drawing.Size(75, 47);
-            this.btnImmagini.TabIndex = 10;
-            this.btnImmagini.Text = "Immagini";
-            this.btnImmagini.UseVisualStyleBackColor = true;
-            this.btnImmagini.Click += new System.EventHandler(this.btnImmagini_Click);
+            this.btnMusica.Size = new System.Drawing.Size(64, 64);
+            this.btnMusica.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnMusica.TabIndex = 13;
+            this.btnMusica.TabStop = false;
+            this.btnMusica.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // btnBanco
             // 
-            this.btnBanco.Location = new System.Drawing.Point(165, 32);
+            this.btnBanco.Image = global::ColombOS.Resource1.System_desktop_icon;
+            this.btnBanco.Location = new System.Drawing.Point(157, 32);
             this.btnBanco.Name = "btnBanco";
-            this.btnBanco.Size = new System.Drawing.Size(60, 110);
-            this.btnBanco.TabIndex = 9;
-            this.btnBanco.Text = "Banco";
-            this.btnBanco.UseVisualStyleBackColor = true;
-            this.btnBanco.Click += new System.EventHandler(this.btnBanco_Click);
+            this.btnBanco.Size = new System.Drawing.Size(64, 64);
+            this.btnBanco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBanco.TabIndex = 13;
+            this.btnBanco.TabStop = false;
+            this.btnBanco.Click += new System.EventHandler(this.btnBanco_Click_1);
             // 
-            // btnArchivio
+            // btnImmagini
             // 
-            this.btnArchivio.Location = new System.Drawing.Point(231, 95);
-            this.btnArchivio.Name = "btnArchivio";
-            this.btnArchivio.Size = new System.Drawing.Size(60, 47);
-            this.btnArchivio.TabIndex = 8;
-            this.btnArchivio.Text = "Archivio";
-            this.btnArchivio.UseVisualStyleBackColor = true;
-            this.btnArchivio.Click += new System.EventHandler(this.btnArchivio_Click);
+            this.btnImmagini.Image = global::ColombOS.Resource1.camera_icon;
+            this.btnImmagini.Location = new System.Drawing.Point(3, 111);
+            this.btnImmagini.Name = "btnImmagini";
+            this.btnImmagini.Size = new System.Drawing.Size(64, 64);
+            this.btnImmagini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnImmagini.TabIndex = 12;
+            this.btnImmagini.TabStop = false;
+            this.btnImmagini.Click += new System.EventHandler(this.btnImmagini_Click_1);
+            // 
+            // btnVideo
+            // 
+            this.btnVideo.Image = global::ColombOS.Resource1.video_camera_icon;
+            this.btnVideo.Location = new System.Drawing.Point(227, 32);
+            this.btnVideo.Name = "btnVideo";
+            this.btnVideo.Size = new System.Drawing.Size(64, 64);
+            this.btnVideo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnVideo.TabIndex = 11;
+            this.btnVideo.TabStop = false;
+            this.btnVideo.Click += new System.EventHandler(this.btnVideo_Click_1);
             // 
             // btnUtente
             // 
@@ -230,7 +232,7 @@
             // panTools
             // 
             this.panTools.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panTools.Controls.Add(this.button1);
+            this.panTools.Controls.Add(this.pictureBox3);
             this.panTools.Controls.Add(this.panel1);
             this.panTools.Controls.Add(this.label3);
             this.panTools.Location = new System.Drawing.Point(559, 3);
@@ -238,15 +240,16 @@
             this.panTools.Size = new System.Drawing.Size(336, 202);
             this.panTools.TabIndex = 6;
             // 
-            // button1
+            // pictureBox3
             // 
-            this.button1.Location = new System.Drawing.Point(6, 32);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 47);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Impostazioni";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.pictureBox3.Image = global::ColombOS.Resource1.Settings_icon;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox3.TabIndex = 9;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // panel1
             // 
@@ -419,6 +422,17 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // btnScaricati
+            // 
+            this.btnScaricati.Image = global::ColombOS.Resource1.Downloads_icon;
+            this.btnScaricati.Location = new System.Drawing.Point(157, 111);
+            this.btnScaricati.Name = "btnScaricati";
+            this.btnScaricati.Size = new System.Drawing.Size(64, 64);
+            this.btnScaricati.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.btnScaricati.TabIndex = 12;
+            this.btnScaricati.TabStop = false;
+            this.btnScaricati.Click += new System.EventHandler(this.btnScaricati_Click_1);
+            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -441,10 +455,16 @@
             this.panStart.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMusica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBanco)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnImmagini)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnVideo)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panTools.ResumeLayout(false);
             this.panTools.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panPR.ResumeLayout(false);
@@ -455,6 +475,7 @@
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnScaricati)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -469,18 +490,12 @@
         private System.Windows.Forms.Panel panTools;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnScaricati;
-        private System.Windows.Forms.Button btnMusica;
-        private System.Windows.Forms.Button btnImmagini;
-        private System.Windows.Forms.Button btnBanco;
-        private System.Windows.Forms.Button btnArchivio;
         private System.Windows.Forms.Button btnUtente;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnVideo;
         private System.Windows.Forms.Button btnTutti;
         private System.Windows.Forms.Panel panProgrammi;
         private System.Windows.Forms.Label label7;
@@ -491,10 +506,16 @@
         private System.Windows.Forms.Button btnCerca;
         private System.Windows.Forms.Label lblNomeCartella;
         private System.Windows.Forms.Button btnChiudi;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label Recenti;
         private System.Windows.Forms.ListBox listaProgrammi;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox btnVideo;
+        private System.Windows.Forms.PictureBox btnImmagini;
+        private System.Windows.Forms.PictureBox btnScaricati;
+        private System.Windows.Forms.PictureBox btnMusica;
+        private System.Windows.Forms.PictureBox btnBanco;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

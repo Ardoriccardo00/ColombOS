@@ -103,56 +103,6 @@ namespace ColombOS
             //Process.Start(Installazione.percorsoNomeUtente);
         }
 
-        private void btnImmagini_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Immagini";
-
-        }
-
-        private void btnMusica_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Musica";
-
-        }
-
-        private void btnBanco_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Banco";
-        }
-
-        private void btnVideo_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Video";
-        }
-
-        private void btnArchivio_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Archivio";
-        }
-
-        private void btnScaricati_Click(object sender, EventArgs e)
-        {
-            Cartella c = new Cartella();
-            c.Show();
-
-            Media = "Scaricati";
-        }
-
         private void Principale_Load(object sender, EventArgs e) // Load Principale
         {
             ControlExtension.Draggable(pannello, true);
@@ -202,12 +152,6 @@ namespace ColombOS
             pannello.Visible = false;
         }
 
-        private void button1_Click_1(object sender, EventArgs e) // Pulsante Impostazioni
-        {
-            Impostazioni impostazioni = new Impostazioni();
-            impostazioni.Show();
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e) // Pulsante spegni
         {
             Application.Exit();
@@ -217,6 +161,60 @@ namespace ColombOS
         {
             if (panStart.Visible == false) { panStart.Visible = true; }
             else if (panStart.Visible == true) { panStart.Visible = false; }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Impostazioni impostazioni = new Impostazioni();
+            impostazioni.Show();
+        }
+
+        private void btnImmagini_Click_1(object sender, EventArgs e)
+        {
+            Media = "Immagini";
+
+            Cartella c = new Cartella();
+            c.Show();
+        }
+
+        private void btnVideo_Click_1(object sender, EventArgs e)
+        {
+            Media = "Video";
+
+            Cartella c = new Cartella();
+            c.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Media = "Musica";
+
+            Cartella c = new Cartella();
+            c.Show();
+        } // Pulsante musica
+
+        private void btnBanco_Click_1(object sender, EventArgs e)
+        {
+            Media = "Banco";
+
+            Cartella c = new Cartella();
+            c.Show();
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            Media = "Archivio";
+
+            Cartella c = new Cartella();
+            c.Show();
+        }
+
+        private void btnScaricati_Click_1(object sender, EventArgs e)
+        {
+            Media = "Scaricati";
+
+            Cartella c = new Cartella();
+            c.Show();
         }
     }
 }
