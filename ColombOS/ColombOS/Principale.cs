@@ -68,16 +68,14 @@ namespace ColombOS
             }
         }
 
-       
-
-        private void listBox1_DoubleClick(object sender, EventArgs e) // Lista tutti i programmi
+        private void listaProgrammi_DoubleClick(object sender, EventArgs e)
         {
             if (RecPulsanti == 0) { RecPos1 = 295; RecPos2 = 60; }
             if (RecPulsanti == 1) { RecPos1 = RecPos1 + 100; }
             if (RecPulsanti == 2) { RecPos1 = RecPos1 + 100; }
             if (RecPulsanti == 3) { RecPos1 = RecPos1 - 200; RecPos2 = RecPos2 + 100; }
-            if (RecPulsanti == 4) { RecPos1 = RecPos1 + 100;}
-            if (RecPulsanti == 5) { RecPos1 = RecPos1 + 100;}
+            if (RecPulsanti == 4) { RecPos1 = RecPos1 + 100; }
+            if (RecPulsanti == 5) { RecPos1 = RecPos1 + 100; }
             if (RecPulsanti == 6) { RecPulsanti = 0; }
 
             Programma = Convert.ToString(listaProgrammi.SelectedItem);
@@ -98,7 +96,6 @@ namespace ColombOS
 
             Process.Start(ProgrammaCompleto);
             label7.Text = Convert.ToString(ProgrammaCompleto);
-
         }
 
         private void btn_Click(object sender, EventArgs e) // Click pulsante
@@ -282,6 +279,7 @@ namespace ColombOS
             Impostazioni impostazioni = new Impostazioni();
             impostazioni.Show();
         }
+
 
     }
 }

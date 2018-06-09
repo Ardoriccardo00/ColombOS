@@ -413,6 +413,7 @@
             this.listaProgrammi.Name = "listaProgrammi";
             this.listaProgrammi.Size = new System.Drawing.Size(194, 303);
             this.listaProgrammi.TabIndex = 7;
+            this.listaProgrammi.DoubleClick += new System.EventHandler(this.listaProgrammi_DoubleClick);
             // 
             // Principale
             // 
