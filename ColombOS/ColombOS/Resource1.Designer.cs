@@ -81,11 +81,31 @@ namespace ColombOS {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Apps_Dialog_Shutdown_icon {
+            get {
+                object obj = ResourceManager.GetObject("Apps_Dialog_Shutdown_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 1.
         /// </summary>
         internal static string ciao {
             get {
                 return ResourceManager.GetString("ciao", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon faviconnn {
+            get {
+                object obj = ResourceManager.GetObject("faviconnn", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -105,6 +125,16 @@ namespace ColombOS {
         internal static System.Drawing.Bitmap nothin_to_see_here__insect {
             get {
                 object obj = ResourceManager.GetObject("nothin_to_see_here__insect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Start_icon {
+            get {
+                object obj = ResourceManager.GetObject("Start_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

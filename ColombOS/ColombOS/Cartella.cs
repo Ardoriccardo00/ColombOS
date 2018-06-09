@@ -13,7 +13,7 @@ namespace ColombOS
 {
     public partial class Cartella : Form
     {
-        public static string Media;
+        string Media = Principale.Media;
 
         string Programma;
         public static string programmaCompleto;
@@ -49,7 +49,7 @@ namespace ColombOS
             timer1.Enabled = true;
 
             Lista.Items.Clear();
-            if      (Media == "Immagini")
+            if (Media == "Immagini")
             {
                 string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Immagini");
                 string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Immagini");
@@ -133,6 +133,7 @@ namespace ColombOS
                     Lista.Items.Add(Path.GetFileName(dir));
                 }
             }
+            else { MessageBox.Show("Non è stato possibile trovare il tipo di cartella!", "Errore!"); }
         }
 
         private void Lista_DoubleClick(object sender, EventArgs e)
@@ -149,7 +150,6 @@ namespace ColombOS
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblNomeCartella.Text = Media;
-            timer1.Enabled = false;
         }
     }
 }

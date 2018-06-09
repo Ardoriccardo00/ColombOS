@@ -33,20 +33,11 @@ namespace ColombOS
         string percorsoScaricati;
         string percorsoVideo;
 
+       public static string Media;
+
         public Principale()
         {
             InitializeComponent();
-        }
-
-        private void btnStart_Click(object sender, EventArgs e) // Pulsante start
-        {
-            if (panStart.Visible == false) { panStart.Visible = true; }
-            else if (panStart.Visible == true) { panStart.Visible = false; }
-        }
-
-        private void btnSpegni_Click(object sender, EventArgs e) // Pulsante spegni
-        {
-            Application.Exit();
         }
 
         private void btnTutti_Click(object sender, EventArgs e) // Pulsante Tutti i programmi
@@ -117,7 +108,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Immagini";
+            Media = "Immagini";
 
         }
 
@@ -126,7 +117,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Musica";
+            Media = "Musica";
 
         }
 
@@ -135,7 +126,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Banco";
+            Media = "Banco";
         }
 
         private void btnVideo_Click(object sender, EventArgs e)
@@ -143,7 +134,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Video";
+            Media = "Video";
         }
 
         private void btnArchivio_Click(object sender, EventArgs e)
@@ -151,7 +142,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Archivio";
+            Media = "Archivio";
         }
 
         private void btnScaricati_Click(object sender, EventArgs e)
@@ -159,7 +150,7 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
-            Cartella.Media = "Scaricati";
+            Media = "Scaricati";
         }
 
         private void Principale_Load(object sender, EventArgs e) // Load Principale
@@ -217,7 +208,16 @@ namespace ColombOS
             impostazioni.Show();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e) // Pulsante spegni
+        {
+            Application.Exit();
+        }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (panStart.Visible == false) { panStart.Visible = true; }
+            else if (panStart.Visible == true) { panStart.Visible = false; }
+        }
     }
 }
 
