@@ -117,10 +117,13 @@ namespace ColombOS
             Cartella c = new Cartella();
             c.Show();
 
+            Cartella.Media = "Immagini";
+            MessageBox.Show(Cartella.Media);
+
             //MessageBox.Show(percorsoImmagini);
             //Process.Start(percorsoImmagini);
 
-            panelImmagini.Visible = true;
+            //panelImmagini.Visible = true;
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Immagini");
             string[] dirs = Directory.GetDirectories(cartellaRadice + "/Immagini");  //FBD.SelectedPath
@@ -137,7 +140,7 @@ namespace ColombOS
 
         private void btnMusica_Click(object sender, EventArgs e)
         {
-            panelImmagini.Visible = true;
+            pannello.Visible = true;
             lblNomeCartella.Text = "Musica";
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Musica");
@@ -155,7 +158,7 @@ namespace ColombOS
 
         private void btnBanco_Click(object sender, EventArgs e)
         {
-            panelImmagini.Visible = true;
+            pannello.Visible = true;
             lblNomeCartella.Text = "Banco";
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Banco");
@@ -173,7 +176,7 @@ namespace ColombOS
 
         private void btnVideo_Click(object sender, EventArgs e)
         {
-            panelImmagini.Visible = true;
+            pannello.Visible = true;
             lblNomeCartella.Text = "Video";
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Video");
@@ -191,7 +194,7 @@ namespace ColombOS
 
         private void btnArchivio_Click(object sender, EventArgs e)
         {
-            panelImmagini.Visible = true;
+            pannello.Visible = true;
             lblNomeCartella.Text = "Archivio";
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Archivio");
@@ -209,7 +212,7 @@ namespace ColombOS
 
         private void btnScaricati_Click(object sender, EventArgs e)
         {
-            panelImmagini.Visible = true;
+            pannello.Visible = true;
             lblNomeCartella.Text = "Scaricati";
             listBox2.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Scaricati");
@@ -227,7 +230,7 @@ namespace ColombOS
 
         private void Principale_Load(object sender, EventArgs e) // Load Principale
         {
-            ControlExtension.Draggable(panelImmagini, true);
+            ControlExtension.Draggable(pannello, true);
 
             cartellaRadice = ciao + "/" + "Radice";
             label7.Text = cartellaRadice;
@@ -271,7 +274,7 @@ namespace ColombOS
 
         private void btnChiudi_Click(object sender, EventArgs e) // Pulsante chiudi
         {
-            panelImmagini.Visible = false;
+            pannello.Visible = false;
         }
 
         private void button1_Click_1(object sender, EventArgs e) // Pulsante Impostazioni

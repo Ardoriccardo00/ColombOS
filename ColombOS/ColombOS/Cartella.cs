@@ -13,6 +13,10 @@ namespace ColombOS
 {
     public partial class Cartella : Form
     {
+        public static string Media;
+
+        string Programma;
+        public static string programmaCompleto;
         public Point mouseLocation;
 
         public Cartella()
@@ -42,6 +46,9 @@ namespace ColombOS
 
         private void Cartella_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("Il nome della cartella è" + Media);
+            lblNomeCartella.Text = Media;
+
             Lista.Items.Clear();
             string[] files = Directory.GetFiles(Principale.cartellaRadice + "/Immagini");
             string[] dirs = Directory.GetDirectories(Principale.cartellaRadice + "/Immagini");  //FBD.SelectedPath
@@ -58,10 +65,13 @@ namespace ColombOS
 
         private void Lista_DoubleClick(object sender, EventArgs e)
         {
-            string Programma = Convert.ToString(Lista.SelectedItem);
-            string ProgrammaCompleto = Principale.percorsoImmagini + "/" + Programma;
+            Programma = Convert.ToString(Lista.SelectedItem);
+            programmaCompleto = Principale.percorsoImmagini + "/" + Programma;
 
-            System.Diagnostics.Process.Start(ProgrammaCompleto);
+            PhotoViewer pw = new PhotoViewer();
+            pw.Show();
+
+            //System.Diagnostics.Process.Start(programmaCompleto);
         }
     }
 }

@@ -55,14 +55,14 @@
             this.btnStart = new System.Windows.Forms.Button();
             this.btnSpegni = new System.Windows.Forms.Button();
             this.panProgrammi = new System.Windows.Forms.Panel();
+            this.listaProgrammi = new System.Windows.Forms.ListBox();
             this.btnAggiungiUltimo = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.panelImmagini = new System.Windows.Forms.Panel();
+            this.pannello = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnChiudi = new System.Windows.Forms.Button();
             this.lblNomeCartella = new System.Windows.Forms.Label();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listaProgrammi = new System.Windows.Forms.ListBox();
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -70,7 +70,7 @@
             this.panel1.SuspendLayout();
             this.panPR.SuspendLayout();
             this.panProgrammi.SuspendLayout();
-            this.panelImmagini.SuspendLayout();
+            this.pannello.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -338,6 +338,15 @@
             this.panProgrammi.TabIndex = 4;
             this.panProgrammi.Visible = false;
             // 
+            // listaProgrammi
+            // 
+            this.listaProgrammi.FormattingEnabled = true;
+            this.listaProgrammi.Location = new System.Drawing.Point(6, 10);
+            this.listaProgrammi.Name = "listaProgrammi";
+            this.listaProgrammi.Size = new System.Drawing.Size(194, 303);
+            this.listaProgrammi.TabIndex = 7;
+            this.listaProgrammi.DoubleClick += new System.EventHandler(this.listaProgrammi_DoubleClick);
+            // 
             // btnAggiungiUltimo
             // 
             this.btnAggiungiUltimo.Location = new System.Drawing.Point(6, 319);
@@ -357,16 +366,16 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "Label di test";
             // 
-            // panelImmagini
+            // pannello
             // 
-            this.panelImmagini.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panelImmagini.Controls.Add(this.panel5);
-            this.panelImmagini.Controls.Add(this.listBox2);
-            this.panelImmagini.Location = new System.Drawing.Point(827, 293);
-            this.panelImmagini.Name = "panelImmagini";
-            this.panelImmagini.Size = new System.Drawing.Size(336, 385);
-            this.panelImmagini.TabIndex = 6;
-            this.panelImmagini.Visible = false;
+            this.pannello.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.pannello.Controls.Add(this.panel5);
+            this.pannello.Controls.Add(this.listBox2);
+            this.pannello.Location = new System.Drawing.Point(827, 293);
+            this.pannello.Name = "pannello";
+            this.pannello.Size = new System.Drawing.Size(336, 385);
+            this.pannello.TabIndex = 6;
+            this.pannello.Visible = false;
             // 
             // panel5
             // 
@@ -406,20 +415,11 @@
             this.listBox2.TabIndex = 0;
             this.listBox2.DoubleClick += new System.EventHandler(this.listBox2_DoubleClick);
             // 
-            // listaProgrammi
-            // 
-            this.listaProgrammi.FormattingEnabled = true;
-            this.listaProgrammi.Location = new System.Drawing.Point(6, 10);
-            this.listaProgrammi.Name = "listaProgrammi";
-            this.listaProgrammi.Size = new System.Drawing.Size(194, 303);
-            this.listaProgrammi.TabIndex = 7;
-            this.listaProgrammi.DoubleClick += new System.EventHandler(this.listaProgrammi_DoubleClick);
-            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1362, 742);
-            this.Controls.Add(this.panelImmagini);
+            this.Controls.Add(this.pannello);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panProgrammi);
             this.Controls.Add(this.btnSpegni);
@@ -446,7 +446,7 @@
             this.panPR.ResumeLayout(false);
             this.panPR.PerformLayout();
             this.panProgrammi.ResumeLayout(false);
-            this.panelImmagini.ResumeLayout(false);
+            this.pannello.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.ResumeLayout(false);
@@ -481,7 +481,7 @@
         private System.Windows.Forms.Panel panProgrammi;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnAggiungiUltimo;
-        private System.Windows.Forms.Panel panelImmagini;
+        private System.Windows.Forms.Panel pannello;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button btnCerca;
