@@ -60,6 +60,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerSfondo = new System.Windows.Forms.Timer(this.components);
+            this.panProgrammiAperti = new System.Windows.Forms.Panel();
+            this.btnCartellaAperta = new System.Windows.Forms.Button();
+            this.btnImpostazioniAperte = new System.Windows.Forms.Button();
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnScaricati)).BeginInit();
@@ -76,11 +79,12 @@
             this.panProgrammi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panProgrammiAperti.SuspendLayout();
             this.SuspendLayout();
             // 
             // panStart
             // 
-            this.panStart.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panStart.BackColor = System.Drawing.Color.Blue;
             this.panStart.Controls.Add(this.btnCerca);
             this.panStart.Controls.Add(this.btnTutti);
             this.panStart.Controls.Add(this.panel2);
@@ -319,7 +323,7 @@
             // 
             // panProgrammi
             // 
-            this.panProgrammi.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panProgrammi.BackColor = System.Drawing.Color.Blue;
             this.panProgrammi.Controls.Add(this.listaProgrammi);
             this.panProgrammi.Controls.Add(this.btnAggiungiUltimo);
             this.panProgrammi.Location = new System.Drawing.Point(85, 216);
@@ -383,10 +387,47 @@
             this.timerSfondo.Enabled = true;
             this.timerSfondo.Tick += new System.EventHandler(this.timerSfondo_Tick);
             // 
+            // panProgrammiAperti
+            // 
+            this.panProgrammiAperti.BackColor = System.Drawing.Color.Blue;
+            this.panProgrammiAperti.Controls.Add(this.btnImpostazioniAperte);
+            this.panProgrammiAperti.Controls.Add(this.btnCartellaAperta);
+            this.panProgrammiAperti.Location = new System.Drawing.Point(996, 280);
+            this.panProgrammiAperti.Name = "panProgrammiAperti";
+            this.panProgrammiAperti.Size = new System.Drawing.Size(336, 303);
+            this.panProgrammiAperti.TabIndex = 9;
+            // 
+            // btnCartellaAperta
+            // 
+            this.btnCartellaAperta.BackColor = System.Drawing.Color.White;
+            this.btnCartellaAperta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCartellaAperta.Location = new System.Drawing.Point(6, 3);
+            this.btnCartellaAperta.Name = "btnCartellaAperta";
+            this.btnCartellaAperta.Size = new System.Drawing.Size(327, 63);
+            this.btnCartellaAperta.TabIndex = 0;
+            this.btnCartellaAperta.Text = "Cartella";
+            this.btnCartellaAperta.UseVisualStyleBackColor = false;
+            this.btnCartellaAperta.Visible = false;
+            this.btnCartellaAperta.Click += new System.EventHandler(this.btnCartellaAperta_Click);
+            // 
+            // btnImpostazioniAperte
+            // 
+            this.btnImpostazioniAperte.BackColor = System.Drawing.Color.White;
+            this.btnImpostazioniAperte.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnImpostazioniAperte.Location = new System.Drawing.Point(6, 72);
+            this.btnImpostazioniAperte.Name = "btnImpostazioniAperte";
+            this.btnImpostazioniAperte.Size = new System.Drawing.Size(327, 63);
+            this.btnImpostazioniAperte.TabIndex = 1;
+            this.btnImpostazioniAperte.Text = "Impostazioni";
+            this.btnImpostazioniAperte.UseVisualStyleBackColor = false;
+            this.btnImpostazioniAperte.Visible = false;
+            this.btnImpostazioniAperte.Click += new System.EventHandler(this.btnImpostazioniAperte_Click);
+            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1362, 742);
+            this.Controls.Add(this.panProgrammiAperti);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
@@ -422,6 +463,7 @@
             this.panProgrammi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panProgrammiAperti.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,5 +501,8 @@
         private System.Windows.Forms.PictureBox btnBanco;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Timer timerSfondo;
+        private System.Windows.Forms.Panel panProgrammiAperti;
+        private System.Windows.Forms.Button btnImpostazioniAperte;
+        private System.Windows.Forms.Button btnCartellaAperta;
     }
 }

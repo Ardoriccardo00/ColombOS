@@ -162,6 +162,7 @@ namespace ColombOS
         {
             Impostazioni impostazioni = new Impostazioni();
             impostazioni.Show();
+            btnImpostazioniAperte.Visible = true;
         }
 
         private void btnImmagini_Click_1(object sender, EventArgs e)
@@ -170,6 +171,8 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         }
 
         private void btnVideo_Click_1(object sender, EventArgs e)
@@ -178,6 +181,8 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -186,6 +191,8 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         } // Pulsante musica
 
         private void btnBanco_Click_1(object sender, EventArgs e)
@@ -194,6 +201,8 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         }
 
         private void pictureBox4_Click_1(object sender, EventArgs e)
@@ -202,6 +211,8 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         }
 
         private void btnScaricati_Click_1(object sender, EventArgs e)
@@ -210,22 +221,24 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+
+            btnCartellaAperta.Visible = true;
         }
 
         private void timerSfondo_Tick(object sender, EventArgs e)
         {
             if (Sfondo != "x") { /*this.BackgroundImage = Sfondo*/; }
 
-            if (Colore == "Rosso") { panStart.BackColor = Color.Red; panProgrammi.BackColor = Color.Red; }
-            if (Colore == "Arancione") { panStart.BackColor = Color.Orange; panProgrammi.BackColor = Color.Orange; }
-            if (Colore == "Giallo") { panStart.BackColor = Color.Yellow; panProgrammi.BackColor = Color.Yellow; }
-            if (Colore == "Verde") { panStart.BackColor = Color.Green; panProgrammi.BackColor = Color.Green; }
-            if (Colore == "Azzurro") { panStart.BackColor = Color.LightBlue; panProgrammi.BackColor = Color.LightBlue; }
-            if (Colore == "Blu") { panStart.BackColor = Color.Blue; panProgrammi.BackColor = Color.Blue; }
-            if (Colore == "Viola") { panStart.BackColor = Color.Purple; panProgrammi.BackColor = Color.Purple; }
-            if (Colore == "Marrone") { panStart.BackColor = Color.Brown; panProgrammi.BackColor = Color.Brown; }
-            if (Colore == "Nero") { panStart.BackColor = Color.Black; panProgrammi.BackColor = Color.Black; }
-            if (Colore == "Bianco") { panStart.BackColor = Color.White; panProgrammi.BackColor = Color.White; }
+            if (Colore == "Rosso") { panStart.BackColor = Color.Red; panProgrammi.BackColor = Color.Red; panProgrammiAperti.BackColor = Color.Red; }
+            if (Colore == "Arancione") { panStart.BackColor = Color.Orange; panProgrammi.BackColor = Color.Orange; panProgrammiAperti.BackColor = Color.Orange; }
+            if (Colore == "Giallo") { panStart.BackColor = Color.Yellow; panProgrammi.BackColor = Color.Yellow; panProgrammiAperti.BackColor = Color.Yellow; }
+            if (Colore == "Verde") { panStart.BackColor = Color.Green; panProgrammi.BackColor = Color.Green; panProgrammiAperti.BackColor = Color.Green; }
+            if (Colore == "Azzurro") { panStart.BackColor = Color.LightBlue; panProgrammi.BackColor = Color.LightBlue; panProgrammiAperti.BackColor = Color.LightBlue; }
+            if (Colore == "Blu") { panStart.BackColor = Color.Blue; panProgrammi.BackColor = Color.Blue; panProgrammiAperti.BackColor = Color.Blue; }
+            if (Colore == "Viola") { panStart.BackColor = Color.Purple; panProgrammi.BackColor = Color.Purple; panProgrammiAperti.BackColor = Color.Purple; }
+            if (Colore == "Marrone") { panStart.BackColor = Color.Brown; panProgrammi.BackColor = Color.Brown; panProgrammiAperti.BackColor = Color.Brown; }
+            if (Colore == "Nero") { panStart.BackColor = Color.Black; panProgrammi.BackColor = Color.Black; panProgrammiAperti.BackColor = Color.Black; }
+            if (Colore == "Bianco") { panStart.BackColor = Color.White; panProgrammi.BackColor = Color.White; panProgrammiAperti.BackColor = Color.White; }
 
             if (Background == 1) { this.BackgroundImage = Sfondi._279810_vaporwave_background_1920x1080_windows_xp; }
             if (Background == 2) { this.BackgroundImage = Sfondi.gaben_windows_xp; }
@@ -237,6 +250,18 @@ namespace ColombOS
             if (Background == 8) { this.BackgroundImage = Sfondi.popuko; }
             if (Background == 9) { this.BackgroundImage = Sfondi.you_know_Siena_had_to_do_it_to_em; }
             
+        }
+
+        private void btnCartellaAperta_Click(object sender, EventArgs e)
+        {
+            Cartella c = new Cartella();
+            c.Show();
+        }
+
+        private void btnImpostazioniAperte_Click(object sender, EventArgs e)
+        {
+            Impostazioni i = new Impostazioni();
+            i.Show();
         }
     }
 }
