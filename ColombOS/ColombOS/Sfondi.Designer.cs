@@ -73,6 +73,16 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ColombOS_ {
+            get {
+                object obj = ResourceManager.GetObject("ColombOS_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gaben_windows_xp {
             get {
                 object obj = ResourceManager.GetObject("gaben_windows_xp", resourceCulture);
