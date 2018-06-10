@@ -14,6 +14,8 @@ namespace ColombOS
     public partial class Impostazioni : Form
     {
         public Point mouseLocation;
+        public static string[] Colori = new string[] { };
+        string Colore = "Blu";
 
         public Impostazioni()
         {
@@ -84,6 +86,96 @@ namespace ColombOS
             Principale p = new Principale();
             p.BackgroundImage = Resource1.nothin_to_see_here__insect;
             p.Show();
+        }
+
+        private void btnCambiaColori_Click(object sender, EventArgs e)
+        {
+            pannelloColori.Visible = true;
+        }
+
+        private void Rosso_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Rosso";
+            Cartella.Colore = "Rosso";
+            Colore = "Rosso";
+            
+        }
+
+        private void Arancione_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Arancione";
+            Cartella.Colore = "Arancione";
+            Colore = "Arancione";
+        }
+
+        private void Giallo_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Giallo";
+            Cartella.Colore = "Giallo";
+            Colore = "Giallo";
+        }
+
+        private void Verde_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Verde";
+            Cartella.Colore = "Verde";
+            Colore = "Verde";
+        }
+
+        private void Azzurro_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Azzurro";
+            Cartella.Colore = "Azzurro";
+            Colore = "Azzurro";
+        }
+
+        private void Blu_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Blu";
+            Cartella.Colore = "Blu";
+            Colore = "Blu";
+        }
+
+        private void Viola_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Viola";
+            Cartella.Colore = "Viola";
+            Colore = "Viola";
+        }
+
+        private void Marrone_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Marrone";
+            Cartella.Colore = "Marrone";
+            Colore = "Marrone";
+        }
+
+        private void Nero_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Nero";
+            Cartella.Colore = "Nero";
+            Colore = "Nero";
+        }
+
+        private void Bianco_Click(object sender, EventArgs e)
+        {
+            Principale.Colore = "Bianco";
+            Cartella.Colore = "Bianco";
+            Colore = "Bianco";
+        }
+
+        private void timerColori_Tick(object sender, EventArgs e)
+        {
+            if (Colore == "Rosso") { panel1.BackColor = Color.Red; panel6.BackColor = Color.Red; }
+            if (Colore == "Arancione") { panel1.BackColor = Color.Orange; panel6.BackColor = Color.Orange; }
+            if (Colore == "Giallo") { panel1.BackColor = Color.Yellow; panel6.BackColor = Color.Yellow; }
+            if (Colore == "Verde") { panel1.BackColor = Color.Green; panel6.BackColor = Color.Green; }
+            if (Colore == "Azzurro") { panel1.BackColor = Color.LightBlue; panel6.BackColor = Color.LightBlue; }
+            if (Colore == "Blu") { panel1.BackColor = Color.Blue; panel6.BackColor = Color.Blue; }
+            if (Colore == "Viola") { panel1.BackColor = Color.Purple; panel6.BackColor = Color.Purple; }
+            if (Colore == "Marrone") { panel1.BackColor = Color.Brown; panel6.BackColor = Color.Brown; }
+            if (Colore == "Nero") { panel1.BackColor = Color.Black; panel6.BackColor = Color.Black; }
+            if (Colore == "Bianco") { panel1.BackColor = Color.White; panel6.BackColor = Color.White; }
         }
     }
 }

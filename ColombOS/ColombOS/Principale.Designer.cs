@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principale));
             this.panStart = new System.Windows.Forms.Panel();
             this.btnCerca = new System.Windows.Forms.Button();
@@ -58,6 +59,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timerSfondo = new System.Windows.Forms.Timer(this.components);
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnScaricati)).BeginInit();
@@ -376,6 +378,11 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // timerSfondo
+            // 
+            this.timerSfondo.Enabled = true;
+            this.timerSfondo.Tick += new System.EventHandler(this.timerSfondo_Tick);
+            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -451,5 +458,6 @@
         private System.Windows.Forms.PictureBox btnMusica;
         private System.Windows.Forms.PictureBox btnBanco;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Timer timerSfondo;
     }
 }

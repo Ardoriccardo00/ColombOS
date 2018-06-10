@@ -14,6 +14,7 @@ namespace ColombOS
     public partial class Cartella : Form
     {
         string Media = Principale.Media;
+        public static string Colore = "Blu";
 
         string Programma;
         public static string programmaCompleto;
@@ -170,6 +171,17 @@ namespace ColombOS
         private void timer1_Tick(object sender, EventArgs e)
         {
             lblNomeCartella.Text = Media;
+
+            if (Colore == "Rosso") { panelImmagini.BackColor = Color.Red; }
+            if (Colore == "Arancione") { panelImmagini.BackColor = Color.Orange;}
+            if (Colore == "Giallo") { panelImmagini.BackColor = Color.Yellow;}
+            if (Colore == "Verde") { panelImmagini.BackColor = Color.Green; }
+            if (Colore == "Azzurro") { panelImmagini.BackColor = Color.LightBlue;}
+            if (Colore == "Blu") { panelImmagini.BackColor = Color.Blue;}
+            if (Colore == "Viola") { panelImmagini.BackColor = Color.Purple;}
+            if (Colore == "Marrone") { panelImmagini.BackColor = Color.Brown;}
+            if (Colore == "Nero") { panelImmagini.BackColor = Color.Black;}
+            if (Colore == "Bianco") { panelImmagini.BackColor = Color.White;}
         }
     }
 }

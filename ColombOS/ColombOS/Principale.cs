@@ -27,14 +27,17 @@ namespace ColombOS
         string percorsoProgrammi;
         string percorsoBanco;
         string percorsoArchivio;
-       public static string percorsoImmagini;
+        public static string percorsoImmagini;
         string percorsoMusica;
         string pProgrammi;
         string percorsoScaricati;
         string percorsoVideo;
         string percorsoUtente;
 
-       public static string Media;
+        public static string Media;
+        public static string Sfondo = "x";
+
+        public static string Colore = "Blu";
 
         public Principale()
         {
@@ -43,8 +46,8 @@ namespace ColombOS
 
         private void btnTutti_Click(object sender, EventArgs e) // Pulsante Tutti i programmi
         {
-            if (panProgrammi.Visible == false) { panProgrammi.Visible = true;}
-            else if (panProgrammi.Visible == true) { panProgrammi.Visible = false;}
+            if (panProgrammi.Visible == false) { panProgrammi.Visible = true; }
+            else if (panProgrammi.Visible == true) { panProgrammi.Visible = false; }
 
             listaProgrammi.Items.Clear();
             string[] files = Directory.GetFiles(cartellaRadice + "/Programmi");
@@ -112,13 +115,13 @@ namespace ColombOS
             cartellaRadice = ciao + "/" + "Radice";
             label7.Text = cartellaRadice;
 
-             percorsoProgrammi = cartellaRadice + "/Programmi";
+            percorsoProgrammi = cartellaRadice + "/Programmi";
             label7.Text = percorsoProgrammi;
             percorsoBanco = cartellaRadice + "/Banco";
             percorsoArchivio = cartellaRadice + "/Archivio";
             percorsoImmagini = cartellaRadice + "/" + "Immagini";
             percorsoMusica = cartellaRadice + "/Musica";
-           pProgrammi = cartellaRadice + "/Programmi";
+            pProgrammi = cartellaRadice + "/Programmi";
             percorsoScaricati = cartellaRadice + "/Scaricati";
             percorsoVideo = cartellaRadice + "/Video";
             percorsoUtente = cartellaRadice + "/Utente";
@@ -206,6 +209,22 @@ namespace ColombOS
 
             Cartella c = new Cartella();
             c.Show();
+        }
+
+        private void timerSfondo_Tick(object sender, EventArgs e)
+        {
+            if (Sfondo != "x") { /*this.BackgroundImage = Sfondo*/; }
+
+            if (Colore == "Rosso") { panStart.BackColor = Color.Red; panProgrammi.BackColor = Color.Red; }
+            if (Colore == "Arancione") { panStart.BackColor = Color.Orange; panProgrammi.BackColor = Color.Orange; }
+            if (Colore == "Giallo") { panStart.BackColor = Color.Yellow; panProgrammi.BackColor = Color.Yellow; }
+            if (Colore == "Verde") { panStart.BackColor = Color.Green; panProgrammi.BackColor = Color.Green; }
+            if (Colore == "Azzurro") { panStart.BackColor = Color.LightBlue; panProgrammi.BackColor = Color.LightBlue; }
+            if (Colore == "Blu") { panStart.BackColor = Color.Blue; panProgrammi.BackColor = Color.Blue; }
+            if (Colore == "Viola") { panStart.BackColor = Color.Purple; panProgrammi.BackColor = Color.Purple; }
+            if (Colore == "Marrone") { panStart.BackColor = Color.Brown; panProgrammi.BackColor = Color.Brown; }
+            if (Colore == "Nero") { panStart.BackColor = Color.Black; panProgrammi.BackColor = Color.Black; }
+            if (Colore == "Bianco") { panStart.BackColor = Color.White; panProgrammi.BackColor = Color.White; }
         }
     }
 }
