@@ -11,11 +11,12 @@ using System.Windows.Forms;
 
 namespace ColombOS
 {
-    public partial class Impostazioni : Form
+    public partial class Impostazioni : Form //Dimensione originali 338; 385    Dimensioni modificate 741; 384
     {
         public Point mouseLocation;
         public static string[] Colori = new string[] { };
         string Colore = "Blu";
+        bool Aperto = false;
 
         public Impostazioni()
         {
@@ -83,9 +84,9 @@ namespace ColombOS
             //        listBox3.Items.Add(Path.GetFileName(dir));
             //    }
             //}
-            Principale p = new Principale();
-            p.BackgroundImage = Resource1.nothin_to_see_here__insect;
-            p.Show();
+            if (Aperto == false) { this.Size = new Size(741, 384); Aperto = true; }
+            else if (Aperto == true) { this.Size = new Size(338, 385); Aperto = false; }
+
         }
 
         private void btnCambiaColori_Click(object sender, EventArgs e)
@@ -176,6 +177,57 @@ namespace ColombOS
             if (Colore == "Marrone") { panel1.BackColor = Color.Brown; panel6.BackColor = Color.Brown; }
             if (Colore == "Nero") { panel1.BackColor = Color.Black; panel6.BackColor = Color.Black; }
             if (Colore == "Bianco") { panel1.BackColor = Color.White; panel6.BackColor = Color.White; }
+        }
+
+        private void Impostazioni_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(338, 385);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Principale p = new Principale();
+            Principale.Background = 1;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 2;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 3;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 4;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 5;
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 6;
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 7;
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 8;
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            Principale.Background = 9;
         }
     }
 }

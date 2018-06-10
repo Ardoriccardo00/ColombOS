@@ -38,6 +38,7 @@ namespace ColombOS
         public static string Sfondo = "x";
 
         public static string Colore = "Blu";
+        public static int Background;
 
         public Principale()
         {
@@ -225,6 +226,17 @@ namespace ColombOS
             if (Colore == "Marrone") { panStart.BackColor = Color.Brown; panProgrammi.BackColor = Color.Brown; }
             if (Colore == "Nero") { panStart.BackColor = Color.Black; panProgrammi.BackColor = Color.Black; }
             if (Colore == "Bianco") { panStart.BackColor = Color.White; panProgrammi.BackColor = Color.White; }
+
+            if (Background == 1) { this.BackgroundImage = Sfondi._279810_vaporwave_background_1920x1080_windows_xp; }
+            if (Background == 2) { this.BackgroundImage = Sfondi.gaben_windows_xp; }
+            if (Background == 3) { this.BackgroundImage = Sfondi.meet_the_soldier_but_it_s_fortnite; }
+            if (Background == 4) { this.BackgroundImage = Sfondi._279810_vaporwave_background_1920x1080_windows_xp; }
+            if (Background == 5) { this.BackgroundImage = Sfondi.nana_finna_woke; }
+            if (Background == 6) { this.BackgroundImage = Sfondi.new_president_levi; }
+            if (Background == 7) { this.BackgroundImage = Sfondi.nothin_to_see_here__insect; }
+            if (Background == 8) { this.BackgroundImage = Sfondi.popuko; }
+            if (Background == 9) { this.BackgroundImage = Sfondi.you_know_Siena_had_to_do_it_to_em; }
+            
         }
     }
 }

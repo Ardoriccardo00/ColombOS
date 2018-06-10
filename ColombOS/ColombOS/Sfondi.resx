@@ -118,70 +118,31 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="nothin_to_see_here__insect" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\nothin to see here, insect.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="gaben_windows_xp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_20150524_210814" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\20150524_210814.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="meet_the_soldier_but_it_s_fortnite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\meet the soldier but it's fortnite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_2cda3e87c8d45e18cc7e3e931c26a244" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\2cda3e87c8d45e18cc7e3e931c26a244.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minecraft_windows_xp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\VtvqE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nana_finna_woke" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\nana finna woke.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="new_president_levi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\new president levi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ciao" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\ciao.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  <data name="nothin_to_see_here__insect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\nothin to see here, insect.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Apps_Dialog_Shutdown_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Apps-Dialog-Shutdown-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="faviconnn" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\faviconnn.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="archive_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\archive-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="camera_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\camera-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Downloads_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Downloads-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicon__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\favicon (1).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicon__1_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\favicon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicon__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\favicon (2).ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="favicon__2_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\favicon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Guyman_Helmet_Music_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Guyman-Helmet-Music-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Settings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Settings-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Start_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\Start-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="System_desktop_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\System-desktop-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="video_camera_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\video-camera-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="i_said_steam_hams" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\i said steam hams.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="joomla" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Resources\joomla.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="popuko" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\popuko.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="you_know_Siena_had_to_do_it_to_em" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Resources\you know Siena had to do it to em.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_279810_vaporwave_background_1920x1080_windows_xp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\279810-vaporwave-background-1920x1080-windows-xp.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

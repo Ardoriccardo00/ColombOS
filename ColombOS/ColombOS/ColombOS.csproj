@@ -105,6 +105,11 @@
     <Compile Include="SCPFinder.Designer.cs">
       <DependentUpon>SCPFinder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sfondi.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sfondi.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cartella.resx">
       <DependentUpon>Cartella.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +140,10 @@
     <EmbeddedResource Include="SCPFinder.resx">
       <DependentUpon>SCPFinder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sfondi.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sfondi.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,9 +168,6 @@
     <None Include="Resources\ciao.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\new president levi.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\20150524_210814.mp4" />
   </ItemGroup>
   <ItemGroup>
@@ -172,9 +178,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\basic2-087_info-512.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nothin to see here, insect.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\shutdown-512.png" />
@@ -232,6 +235,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\favicon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\i said steam hams.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\joomla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new president levi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nothin to see here, insect.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\you know Siena had to do it to em.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meet the soldier but it%27s fortnite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\popuko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nana finna woke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-XP-Wallpapers-1920x1080-Gallery-84-Plus-PIC-WPW502764.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\279810-vaporwave-background-1920x1080-windows-xp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3d-animated-desktop-wallpaper-for-windows-xp-07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VtvqE.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

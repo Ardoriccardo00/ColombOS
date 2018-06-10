@@ -192,6 +192,26 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap i_said_steam_hams {
+            get {
+                object obj = ResourceManager.GetObject("i_said_steam_hams", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap joomla {
+            get {
+                object obj = ResourceManager.GetObject("joomla", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap new_president_levi {
             get {
                 object obj = ResourceManager.GetObject("new_president_levi", resourceCulture);
@@ -245,6 +265,16 @@ namespace ColombOS {
         internal static System.Drawing.Bitmap video_camera_icon {
             get {
                 object obj = ResourceManager.GetObject("video_camera_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap you_know_Siena_had_to_do_it_to_em {
+            get {
+                object obj = ResourceManager.GetObject("you_know_Siena_had_to_do_it_to_em", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
