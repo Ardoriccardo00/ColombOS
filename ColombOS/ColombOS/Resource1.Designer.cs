@@ -272,6 +272,16 @@ namespace ColombOS {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap www {
+            get {
+                object obj = ResourceManager.GetObject("www", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap you_know_Siena_had_to_do_it_to_em {
             get {
                 object obj = ResourceManager.GetObject("you_know_Siena_had_to_do_it_to_em", resourceCulture);

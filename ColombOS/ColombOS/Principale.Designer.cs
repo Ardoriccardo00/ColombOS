@@ -61,8 +61,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.timerSfondo = new System.Windows.Forms.Timer(this.components);
             this.panProgrammiAperti = new System.Windows.Forms.Panel();
-            this.btnCartellaAperta = new System.Windows.Forms.Button();
             this.btnImpostazioniAperte = new System.Windows.Forms.Button();
+            this.btnCartellaAperta = new System.Windows.Forms.Button();
+            this.btnWWW = new System.Windows.Forms.Button();
             this.panStart.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnScaricati)).BeginInit();
@@ -397,19 +398,6 @@
             this.panProgrammiAperti.Size = new System.Drawing.Size(336, 303);
             this.panProgrammiAperti.TabIndex = 9;
             // 
-            // btnCartellaAperta
-            // 
-            this.btnCartellaAperta.BackColor = System.Drawing.Color.White;
-            this.btnCartellaAperta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCartellaAperta.Location = new System.Drawing.Point(6, 3);
-            this.btnCartellaAperta.Name = "btnCartellaAperta";
-            this.btnCartellaAperta.Size = new System.Drawing.Size(327, 63);
-            this.btnCartellaAperta.TabIndex = 0;
-            this.btnCartellaAperta.Text = "Cartella";
-            this.btnCartellaAperta.UseVisualStyleBackColor = false;
-            this.btnCartellaAperta.Visible = false;
-            this.btnCartellaAperta.Click += new System.EventHandler(this.btnCartellaAperta_Click);
-            // 
             // btnImpostazioniAperte
             // 
             this.btnImpostazioniAperte.BackColor = System.Drawing.Color.White;
@@ -423,10 +411,34 @@
             this.btnImpostazioniAperte.Visible = false;
             this.btnImpostazioniAperte.Click += new System.EventHandler(this.btnImpostazioniAperte_Click);
             // 
+            // btnCartellaAperta
+            // 
+            this.btnCartellaAperta.BackColor = System.Drawing.Color.White;
+            this.btnCartellaAperta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCartellaAperta.Location = new System.Drawing.Point(6, 3);
+            this.btnCartellaAperta.Name = "btnCartellaAperta";
+            this.btnCartellaAperta.Size = new System.Drawing.Size(327, 63);
+            this.btnCartellaAperta.TabIndex = 0;
+            this.btnCartellaAperta.Text = "Cartella";
+            this.btnCartellaAperta.UseVisualStyleBackColor = false;
+            this.btnCartellaAperta.Visible = false;
+            this.btnCartellaAperta.Click += new System.EventHandler(this.btnCartellaAperta_Click);
+            // 
+            // btnWWW
+            // 
+            this.btnWWW.Image = global::ColombOS.Resource1.www;
+            this.btnWWW.Location = new System.Drawing.Point(392, 262);
+            this.btnWWW.Name = "btnWWW";
+            this.btnWWW.Size = new System.Drawing.Size(136, 132);
+            this.btnWWW.TabIndex = 10;
+            this.btnWWW.UseVisualStyleBackColor = true;
+            this.btnWWW.Click += new System.EventHandler(this.btnWWW_Click);
+            // 
             // Principale
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1362, 742);
+            this.Controls.Add(this.btnWWW);
             this.Controls.Add(this.panProgrammiAperti);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -504,5 +516,6 @@
         private System.Windows.Forms.Panel panProgrammiAperti;
         private System.Windows.Forms.Button btnImpostazioniAperte;
         private System.Windows.Forms.Button btnCartellaAperta;
+        private System.Windows.Forms.Button btnWWW;
     }
 }

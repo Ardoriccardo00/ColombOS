@@ -263,6 +263,12 @@ namespace ColombOS
             Impostazioni i = new Impostazioni();
             i.Show();
         }
+
+        private void btnWWW_Click(object sender, EventArgs e)
+        {
+            Browser br = new Browser();
+            br.Show();
+        }
     }
 }
 

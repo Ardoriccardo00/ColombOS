@@ -51,6 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Browser.Designer.cs">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cartella.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Sfondi.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Browser.resx">
+      <DependentUpon>Browser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cartella.resx">
       <DependentUpon>Cartella.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +286,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ColombOS!.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\www.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

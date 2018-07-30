@@ -90,7 +90,7 @@ namespace ColombOS
 
             Avvio.installato = true;
 
-            //Attesa.Enabled = true;
+            Attesa.Enabled = true;
 
             
 
